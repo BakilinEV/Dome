@@ -491,7 +491,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗаявкаСтроки.Приоритет КАК Приоритет,
 	ЗаявкаСтроки.СрокПоставки КАК СрокПоставки,
@@ -506,6 +506,7 @@
 	РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусыСрезПоследних
 		ПО ЗаявкаСтроки.ИдентификаторСтроки = ЗаявкаСтатусыСрезПоследних.ИдентификаторСтроки</QueryText>
+				<MainTable>InformationRegister.ЗаявкаСтроки</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
