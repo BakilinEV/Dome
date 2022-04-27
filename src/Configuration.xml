@@ -88,9 +88,9 @@
 			<Catalog>СтатусыЗаявки</Catalog>
 			<Catalog>СтатусСрочности</Catalog>
 			<Document>Заявка</Document>
+			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
 			<InformationRegister>ЗаявкаСтроки</InformationRegister>
 			<InformationRegister>ЗаявкаСтатусы</InformationRegister>
-			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
 			<InformationRegister>УдалитьЗаявкаСтроки</InformationRegister>
 			<InformationRegister>ЗаявкаОтправлено</InformationRegister>
 			<InformationRegister>ЗаявкаМенеджеры</InformationRegister>
