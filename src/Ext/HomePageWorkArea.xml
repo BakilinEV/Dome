@@ -15,7 +15,7 @@
 			<Form>Catalog.СтатусыЗаявки.Form.ФормаСписка</Form>
 			<Height>100</Height>
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Item>
 	</RightColumn>

@@ -88,12 +88,15 @@
 			<Catalog>СтатусыЗаявки</Catalog>
 			<Catalog>СтатусСрочности</Catalog>
 			<Document>Заявка</Document>
+			<DataProcessor>ОбработкаЗаявок</DataProcessor>
 			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
-			<InformationRegister>ЗаявкаСтроки</InformationRegister>
 			<InformationRegister>ЗаявкаСтатусы</InformationRegister>
-			<InformationRegister>УдалитьЗаявкаСтроки</InformationRegister>
-			<InformationRegister>ЗаявкаОтправлено</InformationRegister>
+			<InformationRegister>ЗаявкаСтроки</InformationRegister>
+			<InformationRegister>ЗаявкаЦены</InformationRegister>
 			<InformationRegister>ЗаявкаМенеджеры</InformationRegister>
+			<InformationRegister>ЗаявкаОтмененые</InformationRegister>
+			<InformationRegister>ЗаявкаОтправлено</InformationRegister>
+			<InformationRegister>УдалитьЗаявкаСтроки</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

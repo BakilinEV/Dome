@@ -29,7 +29,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа документы</v8:content>
+							<v8:content>Документы</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -292,26 +292,26 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="ГруппаЗаявкаСтатусы" id="99">
+				<Page name="ГруппаИнформация" id="99">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа заявка статусы</v8:content>
+							<v8:content>Информация о заказах</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа заявка статусы</v8:content>
+							<v8:content>Группа информация</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппаЗаявкаСтатусыРасширеннаяПодсказка" id="100"/>
+					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="100"/>
 					<ChildItems>
 						<Table name="ЗаявкаСтатусСтроки" id="101">
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>ЗаявкаСтатусСтроки</DataPath>
-							<RowPictureDataPath>ЗаявкаСтатусСтроки.DefaultPicture</RowPictureDataPath>
+							<DataPath>ИнформацияЗаявок</DataPath>
+							<RowPictureDataPath>ИнформацияЗаявок.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -353,56 +353,84 @@
 								<ExtendedTooltip name="ЗаявкаСтатусСтрокиУправлениеПоискомРасширеннаяПодсказка" id="113"/>
 							</SearchControlAddition>
 							<ChildItems>
+								<LabelField name="ЗаявкаСтатусСтрокиИдентификаторСтроки" id="149">
+									<DataPath>ИнформацияЗаявок.ИдентификаторСтроки</DataPath>
+									<ContextMenu name="ЗаявкаСтатусСтрокиИдентификаторСтрокиКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ЗаявкаСтатусСтрокиИдентификаторСтрокиРасширеннаяПодсказка" id="151"/>
+								</LabelField>
+								<ColumnGroup name="ГруппаПриоритет" id="141">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа приоритет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа приоритет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаПриоритетРасширеннаяПодсказка" id="142"/>
+									<ChildItems>
+										<CheckBoxField name="ЗаявкаСтатусСтрокиПриоритет" id="132">
+											<DataPath>ИнформацияЗаявок.Приоритет</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗаявкаСтатусСтрокиПриоритетКонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="ЗаявкаСтатусСтрокиПриоритетРасширеннаяПодсказка" id="134"/>
+										</CheckBoxField>
+										<LabelField name="ЗаявкаСтатусСтрокиСрокПоставки" id="135">
+											<DataPath>ИнформацияЗаявок.СрокПоставки</DataPath>
+											<ContextMenu name="ЗаявкаСтатусСтрокиСрокПоставкиКонтекстноеМеню" id="136"/>
+											<ExtendedTooltip name="ЗаявкаСтатусСтрокиСрокПоставкиРасширеннаяПодсказка" id="137"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ЗаявкаСтатусСтрокиНоменклатураКод" id="143">
+									<DataPath>ИнформацияЗаявок.Номенклатура.Code</DataPath>
+									<ContextMenu name="ЗаявкаСтатусСтрокиНоменклатураКодКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ЗаявкаСтатусСтрокиНоменклатураКодРасширеннаяПодсказка" id="145"/>
+								</LabelField>
 								<LabelField name="ЗаявкаСтатусСтрокиАртикул" id="114">
-									<DataPath>ЗаявкаСтатусСтроки.Артикул</DataPath>
+									<DataPath>ИнформацияЗаявок.Артикул</DataPath>
 									<ContextMenu name="ЗаявкаСтатусСтрокиАртикулКонтекстноеМеню" id="115"/>
 									<ExtendedTooltip name="ЗаявкаСтатусСтрокиАртикулРасширеннаяПодсказка" id="116"/>
 								</LabelField>
+								<LabelField name="ЗаявкаСтатусСтрокиНоменклатура" id="126">
+									<DataPath>ИнформацияЗаявок.Номенклатура</DataPath>
+									<ContextMenu name="ЗаявкаСтатусСтрокиНоменклатураКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ЗаявкаСтатусСтрокиНоменклатураРасширеннаяПодсказка" id="128"/>
+								</LabelField>
 								<LabelField name="ЗаявкаСтатусСтрокиЕдиницаИзмерения" id="117">
-									<DataPath>ЗаявкаСтатусСтроки.ЕдиницаИзмерения</DataPath>
+									<DataPath>ИнформацияЗаявок.ЕдиницаИзмерения</DataPath>
 									<ContextMenu name="ЗаявкаСтатусСтрокиЕдиницаИзмеренияКонтекстноеМеню" id="118"/>
 									<ExtendedTooltip name="ЗаявкаСтатусСтрокиЕдиницаИзмеренияРасширеннаяПодсказка" id="119"/>
 								</LabelField>
 								<LabelField name="ЗаявкаСтатусСтрокиКоличество" id="120">
-									<DataPath>ЗаявкаСтатусСтроки.Количество</DataPath>
+									<DataPath>ИнформацияЗаявок.Количество</DataPath>
 									<ContextMenu name="ЗаявкаСтатусСтрокиКоличествоКонтекстноеМеню" id="121"/>
 									<ExtendedTooltip name="ЗаявкаСтатусСтрокиКоличествоРасширеннаяПодсказка" id="122"/>
 								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиКомментарий" id="123">
-									<DataPath>ЗаявкаСтатусСтроки.Комментарий</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиКомментарийКонтекстноеМеню" id="124"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиКомментарийРасширеннаяПодсказка" id="125"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиНоменклатура" id="126">
-									<DataPath>ЗаявкаСтатусСтроки.Номенклатура</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиНоменклатураКонтекстноеМеню" id="127"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиНоменклатураРасширеннаяПодсказка" id="128"/>
+								<LabelField name="ЗаявкаСтатусСтрокиОсновноеСредствоКод" id="146">
+									<DataPath>ИнформацияЗаявок.ОсновноеСредство.Code</DataPath>
+									<ContextMenu name="ЗаявкаСтатусСтрокиОсновноеСредствоКодКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ЗаявкаСтатусСтрокиОсновноеСредствоКодРасширеннаяПодсказка" id="148"/>
 								</LabelField>
 								<LabelField name="ЗаявкаСтатусСтрокиОсновноеСредство" id="129">
-									<DataPath>ЗаявкаСтатусСтроки.ОсновноеСредство</DataPath>
+									<DataPath>ИнформацияЗаявок.ОсновноеСредство</DataPath>
 									<ContextMenu name="ЗаявкаСтатусСтрокиОсновноеСредствоКонтекстноеМеню" id="130"/>
 									<ExtendedTooltip name="ЗаявкаСтатусСтрокиОсновноеСредствоРасширеннаяПодсказка" id="131"/>
 								</LabelField>
-								<CheckBoxField name="ЗаявкаСтатусСтрокиПриоритет" id="132">
-									<DataPath>ЗаявкаСтатусСтроки.Приоритет</DataPath>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ЗаявкаСтатусСтрокиПриоритетКонтекстноеМеню" id="133"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиПриоритетРасширеннаяПодсказка" id="134"/>
-								</CheckBoxField>
-								<LabelField name="ЗаявкаСтатусСтрокиСрокПоставки" id="135">
-									<DataPath>ЗаявкаСтатусСтроки.СрокПоставки</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиСрокПоставкиКонтекстноеМеню" id="136"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиСрокПоставкиРасширеннаяПодсказка" id="137"/>
+								<LabelField name="ЗаявкаСтатусСтрокиКомментарий" id="123">
+									<DataPath>ИнформацияЗаявок.Комментарий</DataPath>
+									<ContextMenu name="ЗаявкаСтатусСтрокиКомментарийКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ЗаявкаСтатусСтрокиКомментарийРасширеннаяПодсказка" id="125"/>
 								</LabelField>
 								<LabelField name="ЗаявкаСтатусСтрокиСтатус" id="138">
-									<DataPath>ЗаявкаСтатусСтроки.Статус</DataPath>
+									<DataPath>ИнформацияЗаявок.Статус</DataPath>
 									<ContextMenu name="ЗаявкаСтатусСтрокиСтатусКонтекстноеМеню" id="139"/>
 									<ExtendedTooltip name="ЗаявкаСтатусСтрокиСтатусРасширеннаяПодсказка" id="140"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиСтандартнаяКартинка" id="141">
-									<DataPath>ЗаявкаСтатусСтроки.DefaultPicture</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиСтандартнаяКартинкаКонтекстноеМеню" id="142"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиСтандартнаяКартинкаРасширеннаяПодсказка" id="143"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -479,16 +507,22 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ЗаявкаСтатусСтроки" id="2">
+		<Attribute name="ИнформацияЗаявок" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заявка статус строки</v8:content>
+					<v8:content>Информация заявок</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ИнформацияЗаявок.Количество</Field>
+				<Field>ИнформацияЗаявок.Номенклатура</Field>
+				<Field>ИнформацияЗаявок.ОсновноеСредство</Field>
+				<Field>ИнформацияЗаявок.Приоритет</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
@@ -501,7 +535,8 @@
 	ЗаявкаСтроки.Количество КАК Количество,
 	ЗаявкаСтроки.ОсновноеСредство КАК ОсновноеСредство,
 	ЗаявкаСтроки.Комментарий КАК Комментарий,
-	ЗаявкаСтатусыСрезПоследних.Статус КАК Статус
+	ЗаявкаСтатусыСрезПоследних.Статус КАК Статус,
+	ЗаявкаСтроки.ИдентификаторСтроки КАК ИдентификаторСтроки
 ИЗ
 	РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусыСрезПоследних
