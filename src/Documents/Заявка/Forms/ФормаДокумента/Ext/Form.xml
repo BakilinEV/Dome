@@ -225,7 +225,6 @@
 									<DataPath>Объект.АдресПоставки</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<DropListButton>true</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="АдресПоставкиКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="АдресПоставкиРасширеннаяПодсказка" id="15"/>
 									<Events>
@@ -443,14 +442,6 @@
 					<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="37"/>
 				</InputField>
-				<InputField name="ТоварыЕдиницаИзмерения" id="38">
-					<DataPath>Объект.Товары.ЕдиницаИзмерения</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>8</Width>
-					<OpenButton>false</OpenButton>
-					<ContextMenu name="ТоварыЕдиницаИзмеренияКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ТоварыЕдиницаИзмеренияРасширеннаяПодсказка" id="40"/>
-				</InputField>
 				<ColumnGroup name="ТоварыГруппаОстаток" id="267">
 					<Title>
 						<v8:item>
@@ -490,38 +481,36 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
-				<InputField name="ТоварыКоличествоЗаявлено" id="41">
-					<DataPath>Объект.Товары.КоличествоЗаявлено</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>8</Width>
-					<ContextMenu name="ТоварыКоличествоЗаявленоКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ТоварыКоличествоЗаявленоРасширеннаяПодсказка" id="43"/>
-				</InputField>
-				<InputField name="ТоварыКоличество" id="44">
-					<DataPath>Объект.Товары.Количество</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<SpinButton>true</SpinButton>
-					<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="46"/>
-					<Events>
-						<Event name="OnChange">ТоварыКоличествоПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ТоварыЦена" id="47">
-					<DataPath>Объект.Товары.Цена</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="ТоварыЦенаРасширеннаяПодсказка" id="49"/>
-					<Events>
-						<Event name="OnChange">ТоварыЦенаПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ТоварыСумма" id="50">
-					<DataPath>Объект.Товары.Сумма</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="52"/>
-				</InputField>
+				<ColumnGroup name="ТоварыГруппаКоличество" id="271">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="ТоварыГруппаКоличествоРасширеннаяПодсказка" id="272"/>
+					<ChildItems>
+						<InputField name="ТоварыКоличество" id="44">
+							<DataPath>Объект.Товары.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="ТоварыЕдиницаИзмерения" id="38">
+							<DataPath>Объект.Товары.ЕдиницаИзмерения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<Width>8</Width>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="ТоварыЕдиницаИзмеренияКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ТоварыЕдиницаИзмеренияРасширеннаяПодсказка" id="40"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
 				<ColumnGroup name="ТоварыГруппаОсновноеСредствоОбщее" id="115">
 					<Title>
 						<v8:item>
@@ -577,7 +566,7 @@
 					</ChildItems>
 				</ColumnGroup>
 				<InputField name="ТоварыПереченьЗакупа" id="56">
-					<DataPath>Объект.Товары.ПереченьЗакупа</DataPath>
+					<DataPath>1/0:22a4c672-7540-4136-8626-a0bcad029bdf/0:c5b5fa15-455b-4f6a-8feb-6555003919ad</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<MinValue xsi:type="xs:decimal">1</MinValue>
 					<ChoiceList>
@@ -640,13 +629,13 @@
 					<ExtendedTooltip name="ТоварыГруппаМенеджераРасширеннаяПодсказка" id="126"/>
 					<ChildItems>
 						<InputField name="ТоварыМенеджер" id="127">
-							<DataPath>Объект.Товары.Менеджер</DataPath>
+							<DataPath>1/0:22a4c672-7540-4136-8626-a0bcad029bdf/0:f9c25c3c-3626-42f8-9b16-edcf9db45d82</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТоварыМенеджерКонтекстноеМеню" id="128"/>
 							<ExtendedTooltip name="ТоварыМенеджерРасширеннаяПодсказка" id="129"/>
 						</InputField>
 						<InputField name="ТоварыКомментарийМенеджера" id="130">
-							<DataPath>Объект.Товары.КомментарийМенеджера</DataPath>
+							<DataPath>1/0:22a4c672-7540-4136-8626-a0bcad029bdf/0:ad80c95a-1d06-4461-acd7-d30fe7ed26ba</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ТоварыКомментарийМенеджераКонтекстноеМеню" id="131"/>
 							<ExtendedTooltip name="ТоварыКомментарийМенеджераРасширеннаяПодсказка" id="132"/>
@@ -743,7 +732,7 @@
 							<ExtendedTooltip name="ГруппаИтогиРасширеннаяПодсказка" id="182"/>
 							<ChildItems>
 								<LabelField name="ИтогиВсего" id="183">
-									<DataPath>Объект.Товары.TotalСумма</DataPath>
+									<DataPath>1/0:22a4c672-7540-4136-8626-a0bcad029bdf/101000000:012e9a6c-5fc7-4c59-81f9-fedd32ce1491</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>

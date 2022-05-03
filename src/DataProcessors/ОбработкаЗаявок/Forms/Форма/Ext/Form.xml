@@ -296,34 +296,23 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДляОтправкиРасширеннаяПодсказка" id="284"/>
 									<ChildItems>
-										<CommandBar name="ГруппаКомандыОтправить" id="350">
+										<UsualGroup name="ГруппаДляОтправкиКоманды" id="354">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа команды отправить</v8:content>
+													<v8:content>Группа для отправки команды</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа команды отправить</v8:content>
+													<v8:content>Группа для отправки команды</v8:content>
 												</v8:item>
 											</ToolTip>
-											<HorizontalLocation>Right</HorizontalLocation>
-											<ExtendedTooltip name="ГруппаКомандыОтправитьРасширеннаяПодсказка" id="351"/>
-											<ChildItems>
-												<Button name="СтрокиДляОтправкиОтправитьПочту" id="337">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ОтправитьПочту</CommandName>
-													<ExtendedTooltip name="СтрокиДляОтправкиОтправитьПочтуРасширеннаяПодсказка" id="338"/>
-												</Button>
-											</ChildItems>
-										</CommandBar>
-										<UsualGroup name="Группа1" id="354">
 											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="355"/>
+											<ExtendedTooltip name="ГруппаДляОтправкиКомандыРасширеннаяПодсказка" id="355"/>
 											<ChildItems>
 												<LabelField name="ИнформационнаяСтрокаДляОтправки" id="341">
 													<DataPath>ИнформационнаяСтрокаДляОтправки</DataPath>

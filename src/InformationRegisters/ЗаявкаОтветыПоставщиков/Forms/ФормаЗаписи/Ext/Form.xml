@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номенклатура" id="10">
+			<DataPath>Номенклатура</DataPath>
+			<Wrap>false</Wrap>
+			<ChoiceButton>true</ChoiceButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="StartChoice">НоменклатураНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа1" id="9">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="Контрагент" id="1">
+					<DataPath>Запись.Контрагент</DataPath>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="Цена" id="5">
+					<DataPath>Запись.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ДопРасходы" id="19">
+					<DataPath>Запись.ДопРасходы</DataPath>
+					<ContextMenu name="ДопРасходыКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДопРасходыРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Аналог" id="17">
+			<ContextMenu name="АналогКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="АналогРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="14">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<InputField name="СрокПоставки" id="12">
+					<DataPath>Запись.СрокПоставки</DataPath>
+					<ContextMenu name="СрокПоставкиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СрокПоставкиРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="УсловияОплаты" id="15">
+					<DataPath>Запись.УсловияОплаты</DataPath>
+					<Width>32</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="УсловияОплатыКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="УсловияОплатыРасширеннаяПодсказка" id="29"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="3">
+			<DataPath>Запись.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<CheckBoxField name="Отказ" id="7">
+			<DataPath>Запись.Отказ</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтказКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОтказРасширеннаяПодсказка" id="31"/>
+			<Events>
+				<Event name="OnChange">ОтказПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЗаявкаОтветыПоставщиков</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Номенклатура" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

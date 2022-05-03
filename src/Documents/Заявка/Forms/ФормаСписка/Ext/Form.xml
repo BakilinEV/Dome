@@ -230,7 +230,7 @@
 									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 								</LabelField>
 								<LabelField name="СуммаДокумента" id="31">
-									<DataPath>Список.СуммаДокумента</DataPath>
+									<DataPath>~Список.СуммаДокумента</DataPath>
 									<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="32"/>
 									<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="33"/>
 								</LabelField>
