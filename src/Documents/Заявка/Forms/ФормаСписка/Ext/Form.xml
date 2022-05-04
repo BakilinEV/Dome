@@ -56,7 +56,7 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаБыстрыеОтборыExtendedTooltip" id="88"/>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="88"/>
 						</UsualGroup>
 						<CommandBar name="ГруппаКоманднаяПанель" id="67">
 							<Title>
@@ -221,11 +221,14 @@
 								<LabelField name="Дата" id="16">
 									<DataPath>Список.Date</DataPath>
 									<DefaultItem>true</DefaultItem>
+									<Width>7</Width>
+									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
 								</LabelField>
 								<LabelField name="Номер" id="19">
 									<DataPath>Список.Number</DataPath>
+									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
 									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 								</LabelField>
@@ -236,18 +239,24 @@
 								</LabelField>
 								<LabelField name="СрокПоставки" id="64">
 									<DataPath>Список.СрокПоставки</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
 									<ContextMenu name="СрокПоставкиКонтекстноеМеню" id="65"/>
 									<ExtendedTooltip name="СрокПоставкиРасширеннаяПодсказка" id="66"/>
-								</LabelField>
-								<LabelField name="Ответственный" id="22">
-									<DataPath>Список.Ответственный</DataPath>
-									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
-									<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="24"/>
 								</LabelField>
 								<LabelField name="Организация" id="89">
 									<DataPath>Список.Организация</DataPath>
 									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="90"/>
 									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<LabelField name="Ответственный" id="22">
+									<DataPath>Список.Ответственный</DataPath>
+									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="24"/>
 								</LabelField>
 								<LabelField name="ДатаСтатуса" id="55">
 									<DataPath>~Список.ДатаСтатуса</DataPath>
@@ -272,6 +281,12 @@
 								</LabelField>
 								<LabelField name="КраткийСоставДокумента" id="28">
 									<DataPath>Список.КраткийСоставДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="КраткийСоставДокументаКонтекстноеМеню" id="29"/>
 									<ExtendedTooltip name="КраткийСоставДокументаРасширеннаяПодсказка" id="30"/>
 								</LabelField>
@@ -307,7 +322,7 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="100"/>
 					<ChildItems>
-						<Table name="ЗаявкаСтатусСтроки" id="101">
+						<Table name="ИнформацияЗаявок" id="101">
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>ИнформацияЗаявок</DataPath>
@@ -325,112 +340,223 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<ContextMenu name="ЗаявкаСтатусСтрокиКонтекстноеМеню" id="102"/>
-							<AutoCommandBar name="ЗаявкаСтатусСтрокиКоманднаяПанель" id="103"/>
-							<ExtendedTooltip name="ЗаявкаСтатусСтрокиРасширеннаяПодсказка" id="104"/>
-							<SearchStringAddition name="ЗаявкаСтатусСтрокиСтрокаПоиска" id="105">
+							<ContextMenu name="ИнформацияЗаявокКонтекстноеМеню" id="102"/>
+							<AutoCommandBar name="ИнформацияЗаявокКоманднаяПанель" id="103"/>
+							<ExtendedTooltip name="ИнформацияЗаявокРасширеннаяПодсказка" id="104"/>
+							<SearchStringAddition name="ИнформацияЗаявокСтрокаПоиска" id="105">
 								<AdditionSource>
-									<Item>ЗаявкаСтатусСтроки</Item>
+									<Item>ИнформацияЗаявок</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗаявкаСтатусСтрокиСтрокаПоискаКонтекстноеМеню" id="106"/>
-								<ExtendedTooltip name="ЗаявкаСтатусСтрокиСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+								<ContextMenu name="ИнформацияЗаявокСтрокаПоискаКонтекстноеМеню" id="106"/>
+								<ExtendedTooltip name="ИнформацияЗаявокСтрокаПоискаРасширеннаяПодсказка" id="107"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ЗаявкаСтатусСтрокиСостояниеПросмотра" id="108">
+							<ViewStatusAddition name="ИнформацияЗаявокСостояниеПросмотра" id="108">
 								<AdditionSource>
-									<Item>ЗаявкаСтатусСтроки</Item>
+									<Item>ИнформацияЗаявок</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗаявкаСтатусСтрокиСостояниеПросмотраКонтекстноеМеню" id="109"/>
-								<ExtendedTooltip name="ЗаявкаСтатусСтрокиСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+								<ContextMenu name="ИнформацияЗаявокСостояниеПросмотраКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="ИнформацияЗаявокСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ЗаявкаСтатусСтрокиУправлениеПоиском" id="111">
+							<SearchControlAddition name="ИнформацияЗаявокУправлениеПоиском" id="111">
 								<AdditionSource>
-									<Item>ЗаявкаСтатусСтроки</Item>
+									<Item>ИнформацияЗаявок</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗаявкаСтатусСтрокиУправлениеПоискомКонтекстноеМеню" id="112"/>
-								<ExtendedTooltip name="ЗаявкаСтатусСтрокиУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+								<ContextMenu name="ИнформацияЗаявокУправлениеПоискомКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="ИнформацияЗаявокУправлениеПоискомРасширеннаяПодсказка" id="113"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="ЗаявкаСтатусСтрокиИдентификаторСтроки" id="149">
-									<DataPath>ИнформацияЗаявок.ИдентификаторСтроки</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиИдентификаторСтрокиКонтекстноеМеню" id="150"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиИдентификаторСтрокиРасширеннаяПодсказка" id="151"/>
-								</LabelField>
-								<ColumnGroup name="ГруппаПриоритет" id="141">
+								<ColumnGroup name="ТоварыГруппаПриоритет" id="167">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа приоритет</v8:content>
+											<v8:content>Товары группа приоритет</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа приоритет</v8:content>
+											<v8:content>Товары группа приоритет</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Horizontal</Group>
-									<ExtendedTooltip name="ГруппаПриоритетРасширеннаяПодсказка" id="142"/>
+									<ExtendedTooltip name="ТоварыГруппаПриоритетРасширеннаяПодсказка" id="168"/>
 									<ChildItems>
-										<CheckBoxField name="ЗаявкаСтатусСтрокиПриоритет" id="132">
+										<CheckBoxField name="ИнформацияЗаявокПриоритет" id="141">
 											<DataPath>ИнформацияЗаявок.Приоритет</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ЗаявкаСтатусСтрокиПриоритетКонтекстноеМеню" id="133"/>
-											<ExtendedTooltip name="ЗаявкаСтатусСтрокиПриоритетРасширеннаяПодсказка" id="134"/>
+											<ContextMenu name="ИнформацияЗаявокПриоритетКонтекстноеМеню" id="142"/>
+											<ExtendedTooltip name="ИнформацияЗаявокПриоритетРасширеннаяПодсказка" id="143"/>
 										</CheckBoxField>
-										<LabelField name="ЗаявкаСтатусСтрокиСрокПоставки" id="135">
-											<DataPath>ИнформацияЗаявок.СрокПоставки</DataPath>
-											<ContextMenu name="ЗаявкаСтатусСтрокиСрокПоставкиКонтекстноеМеню" id="136"/>
-											<ExtendedTooltip name="ЗаявкаСтатусСтрокиСрокПоставкиРасширеннаяПодсказка" id="137"/>
+										<LabelField name="ИнформацияЗаявокСтатусСрочности" id="150">
+											<DataPath>ИнформацияЗаявок.СтатусСрочности</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Срочность</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ИнформацияЗаявокСтатусСрочностиКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="ИнформацияЗаявокСтатусСрочностиРасширеннаяПодсказка" id="152"/>
 										</LabelField>
 									</ChildItems>
 								</ColumnGroup>
-								<LabelField name="ЗаявкаСтатусСтрокиНоменклатураКод" id="143">
-									<DataPath>ИнформацияЗаявок.Номенклатура.Code</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиНоменклатураКодКонтекстноеМеню" id="144"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиНоменклатураКодРасширеннаяПодсказка" id="145"/>
+								<LabelField name="ИнформацияЗаявокСрокПоставки" id="144">
+									<DataPath>ИнформацияЗаявок.СрокПоставки</DataPath>
+									<Width>12</Width>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ИнформацияЗаявокСрокПоставкиКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ИнформацияЗаявокСрокПоставкиРасширеннаяПодсказка" id="146"/>
 								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиАртикул" id="114">
+								<LabelField name="ИнформацияЗаявокНоменклатураКод" id="132">
+									<DataPath>ИнформацияЗаявок.НоменклатураКод</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ИнформацияЗаявокНоменклатураКодКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ИнформацияЗаявокНоменклатураКодРасширеннаяПодсказка" id="134"/>
+								</LabelField>
+								<LabelField name="ИнформацияЗаявокАртикул" id="114">
 									<DataPath>ИнформацияЗаявок.Артикул</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиАртикулКонтекстноеМеню" id="115"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиАртикулРасширеннаяПодсказка" id="116"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Артикул / кат. номер</v8:content>
+										</v8:item>
+									</Title>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ИнформацияЗаявокАртикулКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ИнформацияЗаявокАртикулРасширеннаяПодсказка" id="116"/>
 								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиНоменклатура" id="126">
+								<LabelField name="ИнформацияЗаявокНоменклатура" id="129">
 									<DataPath>ИнформацияЗаявок.Номенклатура</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиНоменклатураКонтекстноеМеню" id="127"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиНоменклатураРасширеннаяПодсказка" id="128"/>
+									<Width>40</Width>
+									<ContextMenu name="ИнформацияЗаявокНоменклатураКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ИнформацияЗаявокНоменклатураРасширеннаяПодсказка" id="131"/>
 								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиЕдиницаИзмерения" id="117">
-									<DataPath>ИнформацияЗаявок.ЕдиницаИзмерения</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиЕдиницаИзмеренияКонтекстноеМеню" id="118"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиЕдиницаИзмеренияРасширеннаяПодсказка" id="119"/>
+								<ColumnGroup name="ТоварыГруппаКоличество" id="159">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ТоварыГруппаКоличествоРасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<LabelField name="ИнформацияЗаявокКоличество" id="123">
+											<DataPath>ИнформацияЗаявок.Количество</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>10</Width>
+											<ContextMenu name="ИнформацияЗаявокКоличествоКонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="ИнформацияЗаявокКоличествоРасширеннаяПодсказка" id="125"/>
+										</LabelField>
+										<LabelField name="ИнформацияЗаявокЕдиницаИзмерения" id="117">
+											<DataPath>ИнформацияЗаявок.ЕдиницаИзмерения</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>6</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ИнформацияЗаявокЕдиницаИзмеренияКонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="ИнформацияЗаявокЕдиницаИзмеренияРасширеннаяПодсказка" id="119"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТоварыГруппаОсновноеСредствоОбщее" id="161">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Товары группа основное средство общее</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Товары группа основное средство общее</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТоварыГруппаОсновноеСредствоОбщееРасширеннаяПодсказка" id="162"/>
+									<ChildItems>
+										<ColumnGroup name="ТоварыГруппаОсновноеСредство" id="163">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Основное средство</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Основное средство</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ТоварыГруппаОсновноеСредствоРасширеннаяПодсказка" id="164"/>
+											<ChildItems>
+												<LabelField name="ИнформацияЗаявокОсновноеСредствоКод" id="156">
+													<DataPath>ИнформацияЗаявок.ОсновноеСредствоКод</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Код</v8:content>
+														</v8:item>
+													</Title>
+													<Width>6</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ИнформацияЗаявокОсновноеСредствоКодКонтекстноеМеню" id="157"/>
+													<ExtendedTooltip name="ИнформацияЗаявокОсновноеСредствоКодРасширеннаяПодсказка" id="158"/>
+												</LabelField>
+												<LabelField name="ИнформацияЗаявокОсновноеСредство" id="138">
+													<DataPath>ИнформацияЗаявок.ОсновноеСредство</DataPath>
+													<Width>30</Width>
+													<ContextMenu name="ИнформацияЗаявокОсновноеСредствоКонтекстноеМеню" id="139"/>
+													<ExtendedTooltip name="ИнформацияЗаявокОсновноеСредствоРасширеннаяПодсказка" id="140"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+										<LabelField name="ИнформацияЗаявокКомментарий" id="126">
+											<DataPath>ИнформацияЗаявок.Комментарий</DataPath>
+											<ContextMenu name="ИнформацияЗаявокКомментарийКонтекстноеМеню" id="127"/>
+											<ExtendedTooltip name="ИнформацияЗаявокКомментарийРасширеннаяПодсказка" id="128"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ИнформацияЗаявокНомерЗаявки" id="135">
+									<DataPath>ИнформацияЗаявок.НомерЗаявки</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ИнформацияЗаявокНомерЗаявкиКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ИнформацияЗаявокНомерЗаявкиРасширеннаяПодсказка" id="137"/>
 								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиКоличество" id="120">
-									<DataPath>ИнформацияЗаявок.Количество</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиКоличествоКонтекстноеМеню" id="121"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиКоличествоРасширеннаяПодсказка" id="122"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиОсновноеСредствоКод" id="146">
-									<DataPath>ИнформацияЗаявок.ОсновноеСредство.Code</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиОсновноеСредствоКодКонтекстноеМеню" id="147"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиОсновноеСредствоКодРасширеннаяПодсказка" id="148"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиОсновноеСредство" id="129">
-									<DataPath>ИнформацияЗаявок.ОсновноеСредство</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиОсновноеСредствоКонтекстноеМеню" id="130"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиОсновноеСредствоРасширеннаяПодсказка" id="131"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиКомментарий" id="123">
-									<DataPath>ИнформацияЗаявок.Комментарий</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиКомментарийКонтекстноеМеню" id="124"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиКомментарийРасширеннаяПодсказка" id="125"/>
-								</LabelField>
-								<LabelField name="ЗаявкаСтатусСтрокиСтатус" id="138">
+								<LabelField name="ИнформацияЗаявокСтатус" id="147">
 									<DataPath>ИнформацияЗаявок.Статус</DataPath>
-									<ContextMenu name="ЗаявкаСтатусСтрокиСтатусКонтекстноеМеню" id="139"/>
-									<ExtendedTooltip name="ЗаявкаСтатусСтрокиСтатусРасширеннаяПодсказка" id="140"/>
+									<ContextMenu name="ИнформацияЗаявокСтатусКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ИнформацияЗаявокСтатусРасширеннаяПодсказка" id="149"/>
+								</LabelField>
+								<LabelField name="ИнформацияЗаявокИдентификаторСтроки" id="120">
+									<DataPath>ИнформацияЗаявок.ИдентификаторСтроки</DataPath>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ИнформацияЗаявокИдентификаторСтрокиКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ИнформацияЗаявокИдентификаторСтрокиРасширеннаяПодсказка" id="122"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -460,12 +586,6 @@
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>eead1b34-4975-49e7-bd2a-61f23e6cb756</dcsset:userSettingID>
 							<dcsset:userSettingPresentation xsi:type="xs:string">Пользователь</dcsset:userSettingPresentation>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:use>false</dcsset:use>
-							<dcsset:left xsi:type="dcscor:Field">СтатусЗаявки</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:userSettingID>e386742c-f29f-448b-bfaa-a62a034e6b6c</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
@@ -525,25 +645,61 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗаявкаСтроки.Приоритет КАК Приоритет,
+	ЗаявкаСтроки.СтатусСрочности КАК СтатусСрочности,
 	ЗаявкаСтроки.СрокПоставки КАК СрокПоставки,
 	ЗаявкаСтроки.Артикул КАК Артикул,
 	ЗаявкаСтроки.Номенклатура КАК Номенклатура,
 	ЗаявкаСтроки.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
 	ЗаявкаСтроки.Количество КАК Количество,
 	ЗаявкаСтроки.ОсновноеСредство КАК ОсновноеСредство,
+	ЗаявкаСтроки.ОсновноеСредство.Код КАК ОсновноеСредствоКод,
 	ЗаявкаСтроки.Комментарий КАК Комментарий,
 	ЗаявкаСтатусыСрезПоследних.Статус КАК Статус,
-	ЗаявкаСтроки.ИдентификаторСтроки КАК ИдентификаторСтроки
+	ЗаявкаСтроки.ИдентификаторСтроки КАК ИдентификаторСтроки,
+	ЗаявкаСтроки.НомерЗаявки КАК НомерЗаявки,
+	ЗаявкаСтроки.Номенклатура.Код КАК НоменклатураКод
 ИЗ
 	РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусыСрезПоследних
-		ПО ЗаявкаСтроки.ИдентификаторСтроки = ЗаявкаСтатусыСрезПоследних.ИдентификаторСтроки</QueryText>
-				<MainTable>InformationRegister.ЗаявкаСтроки</MainTable>
+		ПО ЗаявкаСтроки.ИдентификаторСтроки = ЗаявкаСтатусыСрезПоследних.ИдентификаторСтроки
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаАрхивные КАК ЗаявкаАрхивные
+		ПО ЗаявкаСтроки.ИдентификаторСтроки = ЗаявкаАрхивные.Архивная
+ГДЕ
+	ЗаявкаАрхивные.ИдентификаторСтроки ЕСТЬ NULL</QueryText>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">НомерЗаявки</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>dea2ea65-f368-4bfc-9c3e-a09f0dfecafe</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Номер заявки</dcsset:userSettingPresentation>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>2de7c04d-5450-4088-8b8c-1f9a8e3c566c</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Статус</dcsset:userSettingPresentation>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>00b6de88-19e8-4be1-9dbc-92df0e3a6688</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Номенклатура</dcsset:userSettingPresentation>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">ОсновноеСредство</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>f853cc9d-f368-4df0-a41c-22bf3072e227</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Основное средство</dcsset:userSettingPresentation>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>

@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<InformationRegister uuid="c65e1f83-6501-49f0-826c-2339cfbe4058">
+	<InformationRegister uuid="4d57b360-c05a-48c3-ae4a-a86d0d645c97">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкаОтмененные" category="Record">
-				<xr:TypeId>0c5af384-bf67-48b4-858d-7d15259f952c</xr:TypeId>
-				<xr:ValueId>5bac3132-3a70-42bf-93be-4bba7fe2dbcb</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкаСогласованЗакуп" category="Record">
+				<xr:TypeId>955355ef-64e9-40b1-88fe-4067de80e48a</xr:TypeId>
+				<xr:ValueId>29613670-215f-474b-a41e-d0ed07563c8d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ЗаявкаОтмененные" category="Manager">
-				<xr:TypeId>5d491f84-833c-49f5-8ea1-b9cbfd011e86</xr:TypeId>
-				<xr:ValueId>04cdcf68-682a-44bc-add5-1c910dcd52d5</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ЗаявкаСогласованЗакуп" category="Manager">
+				<xr:TypeId>cc3f9a29-a29e-4d78-998c-618a18630ddf</xr:TypeId>
+				<xr:ValueId>39e0b9b6-381c-47b6-b5aa-a726ed565307</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкаОтмененные" category="Selection">
-				<xr:TypeId>a45a22f6-731d-4b01-81bd-56bcd53bef18</xr:TypeId>
-				<xr:ValueId>340cf66f-b141-498d-8481-18790cf617f8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкаСогласованЗакуп" category="Selection">
+				<xr:TypeId>1e93eeef-49c1-4480-b83e-1606d4587a0b</xr:TypeId>
+				<xr:ValueId>8b21ff56-42af-4dfd-8d46-d9883d042a3c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ЗаявкаОтмененные" category="List">
-				<xr:TypeId>5249a743-7009-42a6-99f8-60a99f9405f7</xr:TypeId>
-				<xr:ValueId>d073cff9-e252-450c-9d2d-5e42912f12d9</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ЗаявкаСогласованЗакуп" category="List">
+				<xr:TypeId>54939c7f-8e42-43f8-8051-4d31e678a3ab</xr:TypeId>
+				<xr:ValueId>804fe3f3-b984-40e8-91e2-c9fae5b1a07d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкаОтмененные" category="RecordSet">
-				<xr:TypeId>4896957b-004c-4ad2-b68b-601c3cbbd74a</xr:TypeId>
-				<xr:ValueId>c2ffdd79-f627-4dab-b6d3-430d1d62ea5f</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкаСогласованЗакуп" category="RecordSet">
+				<xr:TypeId>3c1a98c3-6676-4c50-9da6-667c1bd6d505</xr:TypeId>
+				<xr:ValueId>f832f506-ae36-49e2-bfba-0f2be931760d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкаОтмененные" category="RecordKey">
-				<xr:TypeId>f323cd2e-2beb-456f-8077-b342afffd815</xr:TypeId>
-				<xr:ValueId>f84b5a94-d2e2-4028-a61f-05c61fb3276d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкаСогласованЗакуп" category="RecordKey">
+				<xr:TypeId>43c912aa-eff3-4332-a00a-2c4a1b7330c7</xr:TypeId>
+				<xr:ValueId>28751bca-37b3-478e-9c67-78dd6946f3a0</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкаОтмененные" category="RecordManager">
-				<xr:TypeId>112afaae-bdcd-4941-bcfa-853216c8fd5b</xr:TypeId>
-				<xr:ValueId>1a7cc22c-6f71-48c0-a892-5a4b49cfc5fe</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкаСогласованЗакуп" category="RecordManager">
+				<xr:TypeId>b6f82d6f-4269-42b0-b688-6a527b83f2ff</xr:TypeId>
+				<xr:ValueId>90f68a22-db89-4542-912e-63faaf022af1</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗаявкаОтмененные</Name>
+			<Name>ЗаявкаСогласованЗакуп</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заявка отмененные</v8:content>
+					<v8:content>Заявка согласован закуп</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
 			<DefaultRecordForm/>
 			<DefaultListForm/>
@@ -170,7 +170,46 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="79a01b53-75ea-4f15-a69b-3fa70719d817">
+			<Resource uuid="dec0873b-34c8-459e-b057-77830185b9d5">
+				<Properties>
+					<Name>СогласованЗакуп</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Согласован закуп</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Resource>
+			<Attribute uuid="7b8c4b0c-57f7-4a15-a5e3-c3303ff5dacc">
 				<Properties>
 					<Name>Комментарий</Name>
 					<Synonym>
@@ -213,7 +252,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="527428ac-c091-4df2-86f5-02e4c62486ca">
+			<Attribute uuid="6bd927bf-4668-4ace-af9a-8213805073b8">
 				<Properties>
 					<Name>Ответственный</Name>
 					<Synonym>
@@ -252,7 +291,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="f2a4d6b9-5d28-433c-89e1-845df2a26846">
+			<Attribute uuid="88a17f7e-3a7b-4444-b202-dcb062a0f91c">
 				<Properties>
 					<Name>ИмяКомпьютера</Name>
 					<Synonym>
@@ -295,7 +334,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="70f08bb9-db7b-48ed-8d35-e89bf858a8b5">
+			<Dimension uuid="e777f1d0-1d2b-4e34-849f-7db8042cbd13">
 				<Properties>
 					<Name>ИдентификаторСтроки</Name>
 					<Synonym>

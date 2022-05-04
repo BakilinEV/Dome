@@ -90,16 +90,21 @@
 			<Catalog>СтатусСрочности</Catalog>
 			<Document>Заявка</Document>
 			<DataProcessor>ОбработкаЗаявок</DataProcessor>
+			<DataProcessor>УстановитьПереченьЦенуМенеджера</DataProcessor>
 			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
 			<InformationRegister>ЗаявкаСтатусы</InformationRegister>
 			<InformationRegister>ЗаявкаСтроки</InformationRegister>
 			<InformationRegister>ЗаявкаЦены</InformationRegister>
 			<InformationRegister>ЗаявкаМенеджеры</InformationRegister>
+			<InformationRegister>ЗаявкаСогласованЗакуп</InformationRegister>
+			<InformationRegister>ЗаявкаСогласованаЦена</InformationRegister>
 			<InformationRegister>ЗаявкаОтмененные</InformationRegister>
 			<InformationRegister>ЗаявкаОтправленныеПоставщикам</InformationRegister>
 			<InformationRegister>ЗаявкаОтветыПоставщиков</InformationRegister>
-			<InformationRegister>ЗаявкиТендер</InformationRegister>
+			<InformationRegister>ЗаявкаТендер</InformationRegister>
 			<InformationRegister>УдалитьЗаявкаСтроки</InformationRegister>
+			<InformationRegister>ЗаявкаАрхивные</InformationRegister>
+			<InformationRegister>ЗаявкаШаблонРегистра</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

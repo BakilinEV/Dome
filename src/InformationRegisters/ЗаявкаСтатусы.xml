@@ -337,24 +337,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Command uuid="befffe11-818d-48bd-9506-00628c7d56a4">
-				<Properties>
-					<Name>Команда1</Name>
-					<Synonym/>
-					<Comment/>
-					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:DocumentRef.Заявка</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

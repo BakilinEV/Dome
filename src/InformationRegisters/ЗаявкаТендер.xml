@@ -2,41 +2,41 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<InformationRegister uuid="ab097df8-b5cb-4ce0-8349-db1e4441bab0">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкиТендер" category="Record">
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкаТендер" category="Record">
 				<xr:TypeId>17623abc-e80b-4ccc-9446-24ec5e004017</xr:TypeId>
 				<xr:ValueId>d61443c5-5fa1-4bc1-b43b-9b1e83bc5b84</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ЗаявкиТендер" category="Manager">
+			<xr:GeneratedType name="InformationRegisterManager.ЗаявкаТендер" category="Manager">
 				<xr:TypeId>cf47aedd-1682-462a-a2d1-9980ae3772c0</xr:TypeId>
 				<xr:ValueId>86b6ceea-30e0-4c6c-978f-a4763e7f3de2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкиТендер" category="Selection">
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкаТендер" category="Selection">
 				<xr:TypeId>cd86e5ca-f767-47fb-9e88-dcfcd2e9b9fb</xr:TypeId>
 				<xr:ValueId>4b69cc42-8470-408f-9dd9-4cf5f78fc1bd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ЗаявкиТендер" category="List">
+			<xr:GeneratedType name="InformationRegisterList.ЗаявкаТендер" category="List">
 				<xr:TypeId>5cc554c1-8d6d-4978-a02f-449aaf298460</xr:TypeId>
 				<xr:ValueId>ceca59b5-6683-479d-afb1-8173e787ebdb</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкиТендер" category="RecordSet">
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкаТендер" category="RecordSet">
 				<xr:TypeId>e816381c-fea7-48e9-87ad-8aec97f82697</xr:TypeId>
 				<xr:ValueId>4098f12b-7afe-4f0e-a624-2a12e64da518</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкиТендер" category="RecordKey">
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкаТендер" category="RecordKey">
 				<xr:TypeId>d6ea7dbb-99da-4e80-a5a0-921470fe5412</xr:TypeId>
 				<xr:ValueId>ad4aecc3-6745-4ff1-a405-20d221bc35f6</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкиТендер" category="RecordManager">
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкаТендер" category="RecordManager">
 				<xr:TypeId>c2b986b7-22b1-44b6-988c-a6b7252cdcdd</xr:TypeId>
 				<xr:ValueId>74a0927e-aab7-4e30-a1b6-69b66c0b2127</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗаявкиТендер</Name>
+			<Name>ЗаявкаТендер</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заявки тендер</v8:content>
+					<v8:content>Заявка тендер</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -152,7 +152,7 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -172,11 +172,11 @@
 		<ChildObjects>
 			<Attribute uuid="80e5a0ce-7583-4f65-976b-69422eed15e2">
 				<Properties>
-					<Name>Поставщик</Name>
+					<Name>Контрагент</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поставщик</v8:content>
+							<v8:content>Контрагент</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -277,49 +277,6 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="83757ccd-dbd6-4557-9c6c-95c19b3e86c8">
-				<Properties>
-					<Name>НоменклатураСтрокой</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номенклатура строкой</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>333</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -477,7 +434,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>333</v8:Length>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -520,7 +477,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>333</v8:Length>
+							<v8:Length>300</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -666,49 +623,6 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="27f26594-42b3-42fc-847b-a1dfb67d1708">
-				<Properties>
-					<Name>ИдСтрокиСтрокой</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ид строки строкой</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>36</v8:Length>
-							<v8:AllowedLength>Fixed</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>

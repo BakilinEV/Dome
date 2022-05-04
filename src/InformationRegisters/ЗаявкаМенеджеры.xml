@@ -152,7 +152,7 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -209,7 +209,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="4e2110c7-c5be-4310-872d-3b652c52b4bc">
+			<Attribute uuid="34526047-c323-4166-8ea0-6947576faacf">
 				<Properties>
 					<Name>Комментарий</Name>
 					<Synonym>
@@ -251,7 +251,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Resource>
+			</Attribute>
 			<Attribute uuid="a3cb1782-380e-410b-8ba8-975082ff7525">
 				<Properties>
 					<Name>Ответственный</Name>

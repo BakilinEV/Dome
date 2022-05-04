@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<InformationRegister uuid="c65e1f83-6501-49f0-826c-2339cfbe4058">
+	<InformationRegister uuid="7e26f240-a84f-484e-863a-49c6321e243b">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкаОтмененные" category="Record">
-				<xr:TypeId>0c5af384-bf67-48b4-858d-7d15259f952c</xr:TypeId>
-				<xr:ValueId>5bac3132-3a70-42bf-93be-4bba7fe2dbcb</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкаШаблонРегистра" category="Record">
+				<xr:TypeId>693b5d0c-2d81-460c-9241-5b39c3dc796b</xr:TypeId>
+				<xr:ValueId>29652de2-d47e-4bfc-b2b0-4e9a2d9a43a1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ЗаявкаОтмененные" category="Manager">
-				<xr:TypeId>5d491f84-833c-49f5-8ea1-b9cbfd011e86</xr:TypeId>
-				<xr:ValueId>04cdcf68-682a-44bc-add5-1c910dcd52d5</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ЗаявкаШаблонРегистра" category="Manager">
+				<xr:TypeId>caf83067-be38-4c87-97c2-b27378e739d8</xr:TypeId>
+				<xr:ValueId>e065c700-99ee-4a1f-b4a0-20239f3263d1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкаОтмененные" category="Selection">
-				<xr:TypeId>a45a22f6-731d-4b01-81bd-56bcd53bef18</xr:TypeId>
-				<xr:ValueId>340cf66f-b141-498d-8481-18790cf617f8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкаШаблонРегистра" category="Selection">
+				<xr:TypeId>50516021-8edb-4204-919e-658e83271cbd</xr:TypeId>
+				<xr:ValueId>c18fed32-a410-4d24-92d9-c097f1371a09</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ЗаявкаОтмененные" category="List">
-				<xr:TypeId>5249a743-7009-42a6-99f8-60a99f9405f7</xr:TypeId>
-				<xr:ValueId>d073cff9-e252-450c-9d2d-5e42912f12d9</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ЗаявкаШаблонРегистра" category="List">
+				<xr:TypeId>4971a16a-a95e-48bc-96f7-9eabc5b52495</xr:TypeId>
+				<xr:ValueId>61146516-882e-4777-8d80-6725eb834aa5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкаОтмененные" category="RecordSet">
-				<xr:TypeId>4896957b-004c-4ad2-b68b-601c3cbbd74a</xr:TypeId>
-				<xr:ValueId>c2ffdd79-f627-4dab-b6d3-430d1d62ea5f</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкаШаблонРегистра" category="RecordSet">
+				<xr:TypeId>cb171132-4e28-40b9-b3da-d043dda04015</xr:TypeId>
+				<xr:ValueId>76321872-08fd-47e1-9f88-ffee8f48b8df</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкаОтмененные" category="RecordKey">
-				<xr:TypeId>f323cd2e-2beb-456f-8077-b342afffd815</xr:TypeId>
-				<xr:ValueId>f84b5a94-d2e2-4028-a61f-05c61fb3276d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкаШаблонРегистра" category="RecordKey">
+				<xr:TypeId>e5494fc4-9bff-446e-8a8a-985d2c6f3f99</xr:TypeId>
+				<xr:ValueId>0222a6bf-eb89-4fe1-b31e-1abef5add249</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкаОтмененные" category="RecordManager">
-				<xr:TypeId>112afaae-bdcd-4941-bcfa-853216c8fd5b</xr:TypeId>
-				<xr:ValueId>1a7cc22c-6f71-48c0-a892-5a4b49cfc5fe</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкаШаблонРегистра" category="RecordManager">
+				<xr:TypeId>0d18159c-be28-40f4-b14f-b3fbd7fea13b</xr:TypeId>
+				<xr:ValueId>aa14063d-ae1a-4966-a5df-46f4f78d035e</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗаявкаОтмененные</Name>
+			<Name>ЗаявкаШаблонРегистра</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заявка отмененные</v8:content>
+					<v8:content>Заявка шаблон регистра</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>false</UseStandardCommands>
+			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
 			<DefaultRecordForm/>
 			<DefaultListForm/>
@@ -152,7 +152,7 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -170,7 +170,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="79a01b53-75ea-4f15-a69b-3fa70719d817">
+			<Attribute uuid="1e3e3ed8-b6ea-456e-84f0-d6ec367cd94e">
 				<Properties>
 					<Name>Комментарий</Name>
 					<Synonym>
@@ -213,7 +213,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="527428ac-c091-4df2-86f5-02e4c62486ca">
+			<Attribute uuid="25e5d63a-c8df-4e07-8f34-0e62606ba6a3">
 				<Properties>
 					<Name>Ответственный</Name>
 					<Synonym>
@@ -252,7 +252,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="f2a4d6b9-5d28-433c-89e1-845df2a26846">
+			<Attribute uuid="7f5f83a6-5f94-4f65-9606-decaffc16466">
 				<Properties>
 					<Name>ИмяКомпьютера</Name>
 					<Synonym>
@@ -295,7 +295,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="70f08bb9-db7b-48ed-8d35-e89bf858a8b5">
+			<Dimension uuid="e442a263-3431-493a-897a-e50b42e130f6">
 				<Properties>
 					<Name>ИдентификаторСтроки</Name>
 					<Synonym>
