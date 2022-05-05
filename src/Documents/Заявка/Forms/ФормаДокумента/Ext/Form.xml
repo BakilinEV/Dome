@@ -379,6 +379,8 @@
 							<v8:content>Приоритет</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Width>3</Width>
+					<ShowTitle>false</ShowTitle>
 					<ShowInHeader>true</ShowInHeader>
 					<HeaderPicture>
 						<xr:Ref>StdPicture.AppearanceExclamationMark</xr:Ref>
@@ -386,14 +388,6 @@
 					</HeaderPicture>
 					<ExtendedTooltip name="ТоварыГруппаПриоритетРасширеннаяПодсказка" id="118"/>
 					<ChildItems>
-						<InputField name="ТоварыСтатусСрочности" id="122">
-							<DataPath>Объект.Товары.СтатусСрочности</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ShowInHeader>false</ShowInHeader>
-							<Width>5</Width>
-							<ContextMenu name="ТоварыСтатусСрочностиКонтекстноеМеню" id="123"/>
-							<ExtendedTooltip name="ТоварыСтатусСрочностиРасширеннаяПодсказка" id="124"/>
-						</InputField>
 						<CheckBoxField name="ТоварыПриоритет" id="119">
 							<DataPath>Объект.Товары.Приоритет</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -402,6 +396,15 @@
 							<ContextMenu name="ТоварыПриоритетКонтекстноеМеню" id="120"/>
 							<ExtendedTooltip name="ТоварыПриоритетРасширеннаяПодсказка" id="121"/>
 						</CheckBoxField>
+						<InputField name="ТоварыСтатусСрочности" id="122">
+							<DataPath>Объект.Товары.СтатусСрочности</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<Width>3</Width>
+							<MaxWidth>4</MaxWidth>
+							<ContextMenu name="ТоварыСтатусСрочностиКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ТоварыСтатусСрочностиРасширеннаяПодсказка" id="124"/>
+						</InputField>
 					</ChildItems>
 				</ColumnGroup>
 				<ColumnGroup name="ТоварыГруппаНоменклатура" id="273">

@@ -71,6 +71,7 @@
 			<CommonPicture>СостоянияЗаявок</CommonPicture>
 			<CommonPicture>ВставитьИзБуфераОбмена</CommonPicture>
 			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
+			<CommonPicture>НумерованыйСписок</CommonPicture>
 			<Role>РазделЗакупки</Role>
 			<CommonModule>ЕдиныйСклад</CommonModule>
 			<CommonModule>ОбменAPI</CommonModule>

@@ -56,12 +56,14 @@
 		<Metadata name="CommonModule.ОбменAPI" id="7da0dfc7-dba6-4b9e-a242-d70e5fdf73c7" configVersion="1cd931a37c75a71bfff07a0c2c60704299629e94"/>
 		<Metadata name="CommonModule.ОбменAPI.Module" id="7da0dfc7-dba6-4b9e-a242-d70e5fdf73c7.0" configVersion="6d14d497302a7f3b4deb29a588f8c9d03cf37d34"/>
 		<Metadata name="CommonPicture.ВставитьИзБуфераОбмена" id="a6c8b889-56d3-48e2-8328-30bae8817b75" configVersion="c288857164687590fb89e87769775a5d14732539"/>
+		<Metadata name="CommonPicture.НумерованыйСписок" id="23660789-76a9-4389-be00-b3f04c040bae" configVersion="f364dcf47acfc61def5f51f78c041091ea6ece33"/>
+		<Metadata name="CommonPicture.НумерованыйСписок.Picture" id="23660789-76a9-4389-be00-b3f04c040bae.0" configVersion="4190a245472c91acd1903b19d049408f83ece780"/>
 		<Metadata name="CommonPicture.РазделЗакупки" id="e19c31e3-1495-45d4-9cb3-8cc60cfbfc3e" configVersion="4a6a61e7141508ba5dd73291cde9bf902ef4f758"/>
 		<Metadata name="CommonPicture.РазделЗакупки.Picture" id="e19c31e3-1495-45d4-9cb3-8cc60cfbfc3e.0" configVersion="98db0068c65a3aab0db11e1adceafd66048cfaeb"/>
 		<Metadata name="CommonPicture.СкопироватьВБуферОбмена" id="c867c6bf-390c-4d44-8e1a-b08c76483bbb" configVersion="d2c8f5ceec4523f943de03eee493f9c7be7237a9"/>
 		<Metadata name="CommonPicture.СостоянияЗаявок" id="20d26512-d603-4106-955d-5fb0392245d4" configVersion="a3945a25ce36457c20695ee2cc0b19c8927299a3"/>
 		<Metadata name="CommonPicture.СостоянияЗаявок.Picture" id="20d26512-d603-4106-955d-5fb0392245d4.0" configVersion="6b14e6067449d81c95bfecca3d295747f37f3bb1"/>
-		<Metadata name="Configuration.Купол" id="881acac8-d885-421a-8a4a-57da361e1302" configVersion="1b8dcad91c02c06bbe0cbd80f2d922d63dc475ea"/>
+		<Metadata name="Configuration.Купол" id="881acac8-d885-421a-8a4a-57da361e1302" configVersion="8dfbd3b86f37d9954834c429bbf4146a5953685c"/>
 		<Metadata name="Configuration.Купол.HomePageWorkArea" id="eeb771bf-66f3-4500-b0e3-aa425fd187e7.8" configVersion="8f85bbecb9dedb49a4b7f9fefbf9fdfee3a46f8d"/>
 		<Metadata name="Constant.ИспользоватьНесколькоОрганизаций" id="cfeaeae7-c1aa-4085-81d8-6bd3936e027e" configVersion="c6e3877cdfd728da24bcdccd7f1a56bf5c21bd02"/>
 		<Metadata name="Constant.КонтрагентЮралс" id="6dcbef03-3db5-4ea7-9a1d-732af4e971a7" configVersion="b45dae6601caf1181ee7d0a53da8f51ea86c14f5"/>
@@ -140,7 +142,7 @@
 		<Metadata name="DataProcessor.ОбработкаЗаявок.Template.Перечень3.Template" id="45daa1a4-0494-4415-9375-55c8b818a178.0" configVersion="17c073f50ba02e96c7a82f12ef8044fe294ef2ff"/>
 		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера" id="9431716c-fafc-483c-9548-ca0fa989c0ba" configVersion="e3367c5ceb923574d1bf0b0c7c154e7021276b1c"/>
 		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма" id="1a0df61a-7750-442a-bf75-3d9ed32de25a" configVersion="02634054979a2c5c6a0e5745abb3b480a3caa4cd"/>
-		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма.Form" id="1a0df61a-7750-442a-bf75-3d9ed32de25a.0" configVersion="492c8e5810035af5d0f8663022263300bbdd9f7d"/>
+		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма.Form" id="1a0df61a-7750-442a-bf75-3d9ed32de25a.0" configVersion="caada2e161661de7d652d020d43feec0fbc6ca57"/>
 		<Metadata name="Document.Заявка" id="cf56e0f0-0ea8-4973-86d6-b8156723935a" configVersion="54b5250b686ba7959f8cd490cdb26878752ae8bc">
 			<Metadata name="Document.Заявка.Attribute.Организация" id="05984d06-e772-49e8-8494-0b468bbf3380"/>
 			<Metadata name="Document.Заявка.TabularSection.Товары" id="22a4c672-7540-4136-8626-a0bcad029bdf"/>
@@ -159,9 +161,9 @@
 			<Metadata name="Document.Заявка.TabularSection.Товары.Attribute.СтатусСрочности" id="d4141e09-9de2-4e10-9796-3436a46078d1"/>
 		</Metadata>
 		<Metadata name="Document.Заявка.Form.ФормаДокумента" id="0cfe2dfd-c651-49f1-a47d-98359a827421" configVersion="2e267d250d61a3596386b0a34ad78627bcec780b"/>
-		<Metadata name="Document.Заявка.Form.ФормаДокумента.Form" id="0cfe2dfd-c651-49f1-a47d-98359a827421.0" configVersion="cf7bf0699550e99af39a1201419c42c792db2cf8"/>
+		<Metadata name="Document.Заявка.Form.ФормаДокумента.Form" id="0cfe2dfd-c651-49f1-a47d-98359a827421.0" configVersion="cec82c9eaaa56f8c8dae8c3855ec5d713ca2a8d5"/>
 		<Metadata name="Document.Заявка.Form.ФормаСписка" id="48f8f00f-4d21-4a44-8d3c-d75a6bb98729" configVersion="ca305d807642daaeb721ee19427255e9a6c592dc"/>
-		<Metadata name="Document.Заявка.Form.ФормаСписка.Form" id="48f8f00f-4d21-4a44-8d3c-d75a6bb98729.0" configVersion="72cfbeb6874b4cf8739f981f4ec9620b887fa463"/>
+		<Metadata name="Document.Заявка.Form.ФормаСписка.Form" id="48f8f00f-4d21-4a44-8d3c-d75a6bb98729.0" configVersion="8602140b49796c99421faac436f4a990edae1a8e"/>
 		<Metadata name="Document.Заявка.ManagerModule" id="cf56e0f0-0ea8-4973-86d6-b8156723935a.2" configVersion="a4f7ca2f2f4a3fd758d2d63f5d6acec05c00d814"/>
 		<Metadata name="Document.Заявка.ObjectModule" id="cf56e0f0-0ea8-4973-86d6-b8156723935a.0" configVersion="99175f8cc49f0d77749b9cfa9ab92755a161ba5c"/>
 		<Metadata name="FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет" id="f89f703e-41db-4c76-b578-45e09df1000d" configVersion="5291d53b9e829f7f4cba61fd021ddbeb591706d2"/>
