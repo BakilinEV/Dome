@@ -72,7 +72,6 @@
 			<CommonPicture>ВставитьИзБуфераОбмена</CommonPicture>
 			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
 			<CommonPicture>НумерованыйСписок</CommonPicture>
-			<SessionParameter>ИмяКомпьютера</SessionParameter>
 			<Role>РазделЗакупки</Role>
 			<CommonModule>ЕдиныйСклад</CommonModule>
 			<CommonModule>ОбменAPI</CommonModule>

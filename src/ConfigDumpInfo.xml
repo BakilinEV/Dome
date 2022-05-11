@@ -65,7 +65,7 @@
 		<Metadata name="CommonPicture.СкопироватьВБуферОбмена" id="c867c6bf-390c-4d44-8e1a-b08c76483bbb" configVersion="d2c8f5ceec4523f943de03eee493f9c7be7237a9"/>
 		<Metadata name="CommonPicture.СостоянияЗаявок" id="20d26512-d603-4106-955d-5fb0392245d4" configVersion="a3945a25ce36457c20695ee2cc0b19c8927299a3"/>
 		<Metadata name="CommonPicture.СостоянияЗаявок.Picture" id="20d26512-d603-4106-955d-5fb0392245d4.0" configVersion="6b14e6067449d81c95bfecca3d295747f37f3bb1"/>
-		<Metadata name="Configuration.Купол" id="881acac8-d885-421a-8a4a-57da361e1302" configVersion="47c49ad326227a0d8143ccda066751bc80b5211b"/>
+		<Metadata name="Configuration.Купол" id="881acac8-d885-421a-8a4a-57da361e1302" configVersion="8b178a5feacd6b400551f95c5eb2e0b092d076c5"/>
 		<Metadata name="Configuration.Купол.HomePageWorkArea" id="eeb771bf-66f3-4500-b0e3-aa425fd187e7.8" configVersion="5fb7d16c0959505295068a6b7142486197ab7c54"/>
 		<Metadata name="Constant.ИспользоватьНесколькоОрганизаций" id="cfeaeae7-c1aa-4085-81d8-6bd3936e027e" configVersion="c6e3877cdfd728da24bcdccd7f1a56bf5c21bd02"/>
 		<Metadata name="Constant.ИспользоватьСтатусСрочности" id="c5cb9282-e648-43f4-a0db-ef9bfee8e671" configVersion="0245acc3b5f0037ed719ee854e8823203f0555aa"/>
@@ -145,7 +145,7 @@
 		<Metadata name="DataProcessor.ОбработкаЗаявок.Template.Перечень3.Template" id="45daa1a4-0494-4415-9375-55c8b818a178.0" configVersion="17c073f50ba02e96c7a82f12ef8044fe294ef2ff"/>
 		<Metadata name="DataProcessor.СогласованиеЗаявок" id="99f20f0d-ed7d-4719-a745-995e9c3db994" configVersion="cc3ef364c7b16a3fab6f09d0d42f0f0b05cfab44"/>
 		<Metadata name="DataProcessor.СогласованиеЗаявок.Form.Форма" id="f4760ace-4cb2-4391-bf10-1f4142a35735" configVersion="f2bf69de5039abfd5fd0f8dc89d4ee61fed3213e"/>
-		<Metadata name="DataProcessor.СогласованиеЗаявок.Form.Форма.Form" id="f4760ace-4cb2-4391-bf10-1f4142a35735.0" configVersion="bf5b7bd5fb5cec094dc8fefaa743f27fceec3cca"/>
+		<Metadata name="DataProcessor.СогласованиеЗаявок.Form.Форма.Form" id="f4760ace-4cb2-4391-bf10-1f4142a35735.0" configVersion="3369bdef46e169122509e03581ac496b3ecaf70a"/>
 		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера" id="9431716c-fafc-483c-9548-ca0fa989c0ba" configVersion="e3367c5ceb923574d1bf0b0c7c154e7021276b1c"/>
 		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма" id="1a0df61a-7750-442a-bf75-3d9ed32de25a" configVersion="02634054979a2c5c6a0e5745abb3b480a3caa4cd"/>
 		<Metadata name="DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма.Form" id="1a0df61a-7750-442a-bf75-3d9ed32de25a.0" configVersion="8f46daf3bfe7ade5c787d217c23f0e7191cb6c28"/>
@@ -332,7 +332,6 @@
 		<Metadata name="Language.Русский" id="bf5eedf8-e406-4203-89c0-e2363e9e9439" configVersion="33ff4e79a1aa636049105b41b89cba6f5e4f2905"/>
 		<Metadata name="Role.РазделЗакупки" id="d6d38e29-7eee-464b-a2b7-ec53aaca384f" configVersion="3b1c290430ae65905df93fc67f5353ea19cef9e1"/>
 		<Metadata name="Role.РазделЗакупки.Rights" id="d6d38e29-7eee-464b-a2b7-ec53aaca384f.0" configVersion="923b3a595535cf76578677ed1e8df3790ce2de9c"/>
-		<Metadata name="SessionParameter.ИмяКомпьютера" id="a8ec5d06-d6ff-4b89-9c73-4c4dacb0545d" configVersion="750166042e963ef6977abb2b09d86c43e6e56a42"/>
 		<Metadata name="StyleItem.ИтогиФонГруппы" id="42e0af87-b40d-4fce-ad55-71b77e25865f" configVersion="ce56fd672574f3ab52884e08bcf5001f4c4060ad"/>
 		<Metadata name="Subsystem.Закупки" id="3fe2a3ea-dc5a-4650-8e0d-c0513b7fc13c" configVersion="9d011e1a0e94b0a296a1670bc9bd3d79b0e3c3f4"/>
 		<Metadata name="Subsystem.Закупки.Subsystem.Закупки" id="ffa23115-c06c-4038-a107-d95e50a65fca" configVersion="ea31ed3e043e76804fab7060765c9f35e89e65a0"/>
