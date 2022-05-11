@@ -11,6 +11,7 @@
 			<Content>
 				<xr:Object>Document.Заявка.Attribute.Организация</xr:Object>
 				<xr:Object>Catalog.СтатусыЗаявки.Attribute.Организация</xr:Object>
+				<xr:Object>InformationRegister.ЗаявкаСтроки.Attribute.Организация</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

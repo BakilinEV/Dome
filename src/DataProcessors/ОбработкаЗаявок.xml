@@ -116,16 +116,20 @@
 				<ChildObjects>
 					<Attribute uuid="07d9a32b-df7b-45bc-bb36-d6688991e4cc">
 						<Properties>
-							<Name>ИдСтроки</Name>
+							<Name>ИдентификаторСтроки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Ид строки</v8:content>
+									<v8:content>Идентификатор строки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>v8:UUID</v8:Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>36</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -831,16 +835,20 @@
 				<ChildObjects>
 					<Attribute uuid="2cc564d6-72a2-41a3-9e7f-d5f53b55c215">
 						<Properties>
-							<Name>ИдСтроки</Name>
+							<Name>ИдентификаторСтроки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Ид строки</v8:content>
+									<v8:content>Идентификатор строки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>v8:UUID</v8:Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>36</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -975,7 +983,7 @@
 					</Attribute>
 					<Attribute uuid="4b9dcdde-b19e-4c95-8947-58c341183888">
 						<Properties>
-							<Name>ДтОтправки</Name>
+							<Name>ДатаОтправки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1064,12 +1072,11 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>10</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
-									<v8:AllowedSign>Any</v8:AllowedSign>
-								</v8:NumberQualifiers>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>9</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format>
@@ -1137,7 +1144,7 @@
 					</Attribute>
 					<Attribute uuid="a9d2ef6d-1df3-42b8-a452-71d4d524a688">
 						<Properties>
-							<Name>ПереченьЗакупа</Name>
+							<Name>Перечень</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1232,16 +1239,20 @@
 				<ChildObjects>
 					<Attribute uuid="7697e446-133e-42ea-be39-7413bd406e37">
 						<Properties>
-							<Name>ИдСтроки</Name>
+							<Name>ИдентификаторСтроки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Ид строки</v8:content>
+									<v8:content>Идентификатор строки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>v8:UUID</v8:Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>36</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -1660,12 +1671,11 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>10</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
-									<v8:AllowedSign>Any</v8:AllowedSign>
-								</v8:NumberQualifiers>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>9</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format>
@@ -1751,16 +1761,20 @@
 				<ChildObjects>
 					<Attribute uuid="090a16a9-1110-429e-8b3e-5df53c8fe154">
 						<Properties>
-							<Name>ИдСтроки</Name>
+							<Name>ИдентификаторСтроки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Ид строки</v8:content>
+									<v8:content>Идентификатор строки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>v8:UUID</v8:Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>36</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -1945,7 +1959,7 @@
 					</Attribute>
 					<Attribute uuid="ba52c3a7-5927-437f-8302-5e892bf9c62f">
 						<Properties>
-							<Name>ПереченьЗакупа</Name>
+							<Name>Перечень</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>

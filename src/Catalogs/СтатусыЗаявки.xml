@@ -297,7 +297,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий1</v8:content>
+							<v8:content>Предыдущий 1</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -337,7 +337,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий2</v8:content>
+							<v8:content>Предыдущий 2</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -377,7 +377,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий3</v8:content>
+							<v8:content>Предыдущий 3</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -457,7 +457,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий1</v8:content>
+							<v8:content>Следующий 1</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -497,7 +497,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий2</v8:content>
+							<v8:content>Следующий 2</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -537,7 +537,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий3</v8:content>
+							<v8:content>Следующий 3</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

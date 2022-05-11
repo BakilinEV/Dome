@@ -582,7 +582,7 @@
 											<ExtendedTooltip name="СтрокиОтправленыеКонтрагентРасширеннаяПодсказка" id="95"/>
 										</InputField>
 										<InputField name="СтрокиОтправленыеДтОтправки" id="99">
-											<DataPath>Объект.СтрокиОтправленные.ДтОтправки</DataPath>
+											<DataPath>Объект.СтрокиОтправленные.ДатаОтправки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СтрокиОтправленыеДтОтправкиКонтекстноеМеню" id="100"/>
 											<ExtendedTooltip name="СтрокиОтправленыеДтОтправкиРасширеннаяПодсказка" id="101"/>
@@ -957,7 +957,7 @@
 											<ExtendedTooltip name="СтрокиОтмененныеПриоритетРасширеннаяПодсказка" id="242"/>
 										</CheckBoxField>
 										<InputField name="СтрокиОтмененныеПереченьЗакупа" id="237">
-											<DataPath>Объект.СтрокиОтмененные.ПереченьЗакупа</DataPath>
+											<DataPath>Объект.СтрокиОтмененные.Перечень</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="СтрокиОтмененныеПереченьЗакупаКонтекстноеМеню" id="238"/>
 											<ExtendedTooltip name="СтрокиОтмененныеПереченьЗакупаРасширеннаяПодсказка" id="239"/>

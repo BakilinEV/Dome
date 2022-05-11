@@ -50,6 +50,12 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="168"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="169"/>
 				</InputField>
+				<CheckBoxField name="Согласование" id="164">
+					<DataPath>Объект.Согласование</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СогласованиеКонтекстноеМеню" id="165"/>
+					<ExtendedTooltip name="СогласованиеРасширеннаяПодсказка" id="166"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСменаСтатуса" id="198">
@@ -68,16 +74,84 @@
 			<Group>AlwaysHorizontal</Group>
 			<ExtendedTooltip name="ГруппаСменаСтатусаРасширеннаяПодсказка" id="199"/>
 			<ChildItems>
-				<InputField name="Предыдущий" id="200">
-					<DataPath>Объект.Предыдущий</DataPath>
-					<ContextMenu name="ПредыдущийКонтекстноеМеню" id="201"/>
-					<ExtendedTooltip name="ПредыдущийРасширеннаяПодсказка" id="202"/>
-				</InputField>
-				<InputField name="Следующий" id="133">
-					<DataPath>Объект.Следующий</DataPath>
-					<ContextMenu name="СледующийКонтекстноеМеню" id="134"/>
-					<ExtendedTooltip name="СледующийРасширеннаяПодсказка" id="135"/>
-				</InputField>
+				<UsualGroup name="ГруппаПредыдущий" id="203">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа предыдущий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа предыдущий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПредыдущийРасширеннаяПодсказка" id="204"/>
+					<ChildItems>
+						<InputField name="Предыдущий" id="200">
+							<DataPath>Объект.Предыдущий</DataPath>
+							<ContextMenu name="ПредыдущийКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="ПредыдущийРасширеннаяПодсказка" id="202"/>
+						</InputField>
+						<InputField name="Предыдущий1" id="207">
+							<DataPath>Объект.Предыдущий1</DataPath>
+							<ContextMenu name="Предыдущий1КонтекстноеМеню" id="208"/>
+							<ExtendedTooltip name="Предыдущий1РасширеннаяПодсказка" id="209"/>
+						</InputField>
+						<InputField name="Предыдущий2" id="210">
+							<DataPath>Объект.Предыдущий2</DataPath>
+							<ContextMenu name="Предыдущий2КонтекстноеМеню" id="211"/>
+							<ExtendedTooltip name="Предыдущий2РасширеннаяПодсказка" id="212"/>
+						</InputField>
+						<InputField name="Предыдущий3" id="213">
+							<DataPath>Объект.Предыдущий3</DataPath>
+							<ContextMenu name="Предыдущий3КонтекстноеМеню" id="214"/>
+							<ExtendedTooltip name="Предыдущий3РасширеннаяПодсказка" id="215"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСледующий" id="205">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа следующий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа следующий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСледующийРасширеннаяПодсказка" id="206"/>
+					<ChildItems>
+						<InputField name="Следующий" id="133">
+							<DataPath>Объект.Следующий</DataPath>
+							<ContextMenu name="СледующийКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="СледующийРасширеннаяПодсказка" id="135"/>
+						</InputField>
+						<InputField name="Следующий1" id="216">
+							<DataPath>Объект.Следующий1</DataPath>
+							<ContextMenu name="Следующий1КонтекстноеМеню" id="217"/>
+							<ExtendedTooltip name="Следующий1РасширеннаяПодсказка" id="218"/>
+						</InputField>
+						<InputField name="Следующий2" id="219">
+							<DataPath>Объект.Следующий2</DataPath>
+							<ContextMenu name="Следующий2КонтекстноеМеню" id="220"/>
+							<ExtendedTooltip name="Следующий2РасширеннаяПодсказка" id="221"/>
+						</InputField>
+						<InputField name="Следующий3" id="222">
+							<DataPath>Объект.Следующий3</DataPath>
+							<ContextMenu name="Следующий3КонтекстноеМеню" id="223"/>
+							<ExtendedTooltip name="Следующий3РасширеннаяПодсказка" id="224"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройкаОформления" id="150">
@@ -192,12 +266,6 @@
 									<ContextMenu name="ЗаголовокКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="27"/>
 								</InputField>
-								<CheckBoxField name="Согласование" id="164">
-									<DataPath>Объект.Согласование</DataPath>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="СогласованиеКонтекстноеМеню" id="165"/>
-									<ExtendedTooltip name="СогласованиеРасширеннаяПодсказка" id="166"/>
-								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаРеквизитыТовары" id="33">

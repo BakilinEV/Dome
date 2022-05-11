@@ -10,6 +10,24 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаБыстрыеОтборы" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="88"/>
+		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="95">
 			<Title>
 				<v8:item>
@@ -40,24 +58,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="98"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаБыстрыеОтборы" id="87">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Быстрые отборы</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Быстрые отборы</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="88"/>
-						</UsualGroup>
 						<CommandBar name="ГруппаКоманднаяПанель" id="67">
 							<Title>
 								<v8:item>
@@ -221,6 +221,12 @@
 								<LabelField name="Дата" id="16">
 									<DataPath>Список.Date</DataPath>
 									<DefaultItem>true</DefaultItem>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата формирования</v8:content>
+										</v8:item>
+									</Title>
 									<Width>7</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
@@ -322,13 +328,39 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="100"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаБыстрыеОтборыИнформация" id="177">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Быстрые отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отборы</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыИнформацияРасширеннаяПодсказка" id="178"/>
+						</UsualGroup>
 						<Table name="ИнформацияЗаявок" id="101">
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>ИнформацияЗаявок</DataPath>
 							<RowPictureDataPath>ИнформацияЗаявок.DefaultPicture</RowPictureDataPath>
-							<AutoRefresh>false</AutoRefresh>
-							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>10</AutoRefreshPeriod>
 							<Period>
 								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
 								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
@@ -340,6 +372,7 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>ГруппаБыстрыеОтборыИнформация</UserSettingsGroup>
 							<ContextMenu name="ИнформацияЗаявокКонтекстноеМеню" id="102"/>
 							<AutoCommandBar name="ИнформацияЗаявокКоманднаяПанель" id="103"/>
 							<ExtendedTooltip name="ИнформацияЗаявокРасширеннаяПодсказка" id="104"/>
@@ -367,7 +400,49 @@
 								<ContextMenu name="ИнформацияЗаявокУправлениеПоискомКонтекстноеМеню" id="112"/>
 								<ExtendedTooltip name="ИнформацияЗаявокУправлениеПоискомРасширеннаяПодсказка" id="113"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeLoadUserSettingsAtServer">ИнформацияЗаявокПередЗагрузкойПользовательскихНастроекНаСервере</Event>
+							</Events>
 							<ChildItems>
+								<ColumnGroup name="ИнформацияЗаявокГруппаЗаявка" id="172">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информация заявок группа заявка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>5</Width>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ИнформацияЗаявокГруппаЗаявкаРасширеннаяПодсказка" id="173"/>
+									<ChildItems>
+										<LabelField name="ИнформацияЗаявокНомерЗаявки" id="135">
+											<DataPath>ИнформацияЗаявок.НомерЗаявки</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ИнформацияЗаявокНомерЗаявкиКонтекстноеМеню" id="136"/>
+											<ExtendedTooltip name="ИнформацияЗаявокНомерЗаявкиРасширеннаяПодсказка" id="137"/>
+										</LabelField>
+										<LabelField name="ИнформацияЗаявокДатаЗаявки" id="169">
+											<DataPath>ИнформацияЗаявок.ДатаЗаявки</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>5</Width>
+											<ContextMenu name="ИнформацияЗаявокДатаЗаявкиКонтекстноеМеню" id="170"/>
+											<ExtendedTooltip name="ИнформацияЗаявокДатаЗаявкиРасширеннаяПодсказка" id="171"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="ИнформацияЗаявокОрганизация" id="174">
+									<DataPath>ИнформацияЗаявок.Организация</DataPath>
+									<ContextMenu name="ИнформацияЗаявокОрганизацияКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ИнформацияЗаявокОрганизацияРасширеннаяПодсказка" id="176"/>
+								</LabelField>
 								<ColumnGroup name="ТоварыГруппаПриоритет" id="167">
 									<Title>
 										<v8:item>
@@ -378,7 +453,7 @@
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Товары группа приоритет</v8:content>
+											<v8:content>Приоритет</v8:content>
 										</v8:item>
 									</ToolTip>
 									<ExtendedTooltip name="ТоварыГруппаПриоритетРасширеннаяПодсказка" id="168"/>
@@ -422,7 +497,7 @@
 											<v8:content>Код</v8:content>
 										</v8:item>
 									</Title>
-									<Width>10</Width>
+									<Width>6</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ИнформацияЗаявокНоменклатураКодКонтекстноеМеню" id="133"/>
 									<ExtendedTooltip name="ИнформацияЗаявокНоменклатураКодРасширеннаяПодсказка" id="134"/>
@@ -435,7 +510,7 @@
 											<v8:content>Артикул / кат. номер</v8:content>
 										</v8:item>
 									</Title>
-									<Width>20</Width>
+									<Width>15</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ИнформацияЗаявокАртикулКонтекстноеМеню" id="115"/>
 									<ExtendedTooltip name="ИнформацияЗаявокАртикулРасширеннаяПодсказка" id="116"/>
@@ -466,14 +541,14 @@
 										<LabelField name="ИнформацияЗаявокКоличество" id="123">
 											<DataPath>ИнформацияЗаявок.Количество</DataPath>
 											<ShowInHeader>false</ShowInHeader>
-											<Width>10</Width>
+											<Width>5</Width>
 											<ContextMenu name="ИнформацияЗаявокКоличествоКонтекстноеМеню" id="124"/>
 											<ExtendedTooltip name="ИнформацияЗаявокКоличествоРасширеннаяПодсказка" id="125"/>
 										</LabelField>
 										<LabelField name="ИнформацияЗаявокЕдиницаИзмерения" id="117">
 											<DataPath>ИнформацияЗаявок.ЕдиницаИзмерения</DataPath>
 											<ShowInHeader>false</ShowInHeader>
-											<Width>6</Width>
+											<Width>5</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ИнформацияЗаявокЕдиницаИзмеренияКонтекстноеМеню" id="118"/>
 											<ExtendedTooltip name="ИнформацияЗаявокЕдиницаИзмеренияРасширеннаяПодсказка" id="119"/>
@@ -539,13 +614,6 @@
 										</LabelField>
 									</ChildItems>
 								</ColumnGroup>
-								<LabelField name="ИнформацияЗаявокНомерЗаявки" id="135">
-									<DataPath>ИнформацияЗаявок.НомерЗаявки</DataPath>
-									<Width>10</Width>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="ИнформацияЗаявокНомерЗаявкиКонтекстноеМеню" id="136"/>
-									<ExtendedTooltip name="ИнформацияЗаявокНомерЗаявкиРасширеннаяПодсказка" id="137"/>
-								</LabelField>
 								<LabelField name="ИнформацияЗаявокСтатус" id="147">
 									<DataPath>ИнформацияЗаявок.Статус</DataPath>
 									<ContextMenu name="ИнформацияЗаявокСтатусКонтекстноеМеню" id="148"/>
@@ -581,7 +649,6 @@
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:use>false</dcsset:use>
 							<dcsset:left xsi:type="dcscor:Field">Ответственный</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>eead1b34-4975-49e7-bd2a-61f23e6cb756</dcsset:userSettingID>
@@ -660,7 +727,10 @@
 	ЗаявкаСтатусыСрезПоследних.Статус КАК Статус,
 	ЗаявкаСтроки.ИдентификаторСтроки КАК ИдентификаторСтроки,
 	ЗаявкаСтроки.НомерЗаявки КАК НомерЗаявки,
-	ЗаявкаСтроки.Номенклатура.Код КАК НоменклатураКод
+	ЗаявкаСтроки.Номенклатура.Код КАК НоменклатураКод,
+	ЗаявкаСтроки.Регистратор.Дата КАК ДатаЗаявки,
+	ЗаявкаСтроки.Ответственный КАК Ответственный,
+	ЗаявкаСтроки.Организация КАК Организация
 ИЗ
 	РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусыСрезПоследних
@@ -684,7 +754,7 @@
 							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>2de7c04d-5450-4088-8b8c-1f9a8e3c566c</dcsset:userSettingID>
-							<dcsset:userSettingPresentation xsi:type="xs:string">Статус</dcsset:userSettingPresentation>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Статус заявки</dcsset:userSettingPresentation>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:use>false</dcsset:use>
@@ -698,12 +768,16 @@
 							<dcsset:left xsi:type="dcscor:Field">ОсновноеСредство</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>f853cc9d-f368-4df0-a41c-22bf3072e227</dcsset:userSettingID>
-							<dcsset:userSettingPresentation xsi:type="xs:string">Основное средство</dcsset:userSettingPresentation>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Авто или ОС</dcsset:userSettingPresentation>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаЗаявки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>

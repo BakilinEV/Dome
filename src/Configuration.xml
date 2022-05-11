@@ -72,12 +72,17 @@
 			<CommonPicture>ВставитьИзБуфераОбмена</CommonPicture>
 			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
 			<CommonPicture>НумерованыйСписок</CommonPicture>
+			<SessionParameter>ИмяКомпьютера</SessionParameter>
 			<Role>РазделЗакупки</Role>
 			<CommonModule>ЕдиныйСклад</CommonModule>
 			<CommonModule>ОбменAPI</CommonModule>
+			<CommonModule>РегистрСведений</CommonModule>
+			<EventSubscription>РегистрСведенийПередЗаписью</EventSubscription>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
+			<FunctionalOption>ИспользоватьСтатусСрочности</FunctionalOption>
 			<CommonCommand>ОткрытьСайтЕдиногоСклада</CommonCommand>
 			<Constant>ИспользоватьНесколькоОрганизаций</Constant>
+			<Constant>ИспользоватьСтатусСрочности</Constant>
 			<Constant>КонтрагентЮралс</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
@@ -92,6 +97,7 @@
 			<Document>Заявка</Document>
 			<DataProcessor>ОбработкаЗаявок</DataProcessor>
 			<DataProcessor>УстановитьПереченьЦенуМенеджера</DataProcessor>
+			<DataProcessor>СогласованиеЗаявок</DataProcessor>
 			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
 			<InformationRegister>ЗаявкаСтатусы</InformationRegister>
 			<InformationRegister>ЗаявкаСтроки</InformationRegister>

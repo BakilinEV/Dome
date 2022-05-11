@@ -1,27 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<Subsystem uuid="ffa23115-c06c-4038-a107-d95e50a65fca">
+	<DataProcessor uuid="99f20f0d-ed7d-4719-a745-995e9c3db994">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.СогласованиеЗаявок" category="Object">
+				<xr:TypeId>abb1f714-55c1-4126-809d-1e398a86ba22</xr:TypeId>
+				<xr:ValueId>81afcc37-3778-41e1-94f8-8ebf13b8a95a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.СогласованиеЗаявок" category="Manager">
+				<xr:TypeId>6d5f8190-0d7b-4efe-886b-7ecdead007ea</xr:TypeId>
+				<xr:ValueId>4546ab25-2504-4019-afa9-180e98581add</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>Закупки</Name>
+			<Name>СогласованиеЗаявок</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Закупки</v8:content>
+					<v8:content>Согласование заявок</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.СогласованиеЗаявок.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
 			<Explanation/>
-			<Picture/>
-			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Заявка</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаявкаПереченьОферт</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаЗаявок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановитьПереченьЦенуМенеджера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СогласованиеЗаявок</xr:Item>
-			</Content>
 		</Properties>
-		<ChildObjects/>
-	</Subsystem>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
 </MetaDataObject>
