@@ -3,7 +3,14 @@
 	<WorkingAreaTemplate>TwoColumnsVariableWidth</WorkingAreaTemplate>
 	<LeftColumn>
 		<Item>
-			<Form>DataProcessor.УстановитьПереченьЦенуМенеджера.Form.Форма</Form>
+			<Form>Document.Заявка.Form.ФормаСписка</Form>
+			<Height>100</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Item>
+		<Item>
+			<Form>Document.Заявка.Form.ФормаДокумента</Form>
 			<Height>100</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>

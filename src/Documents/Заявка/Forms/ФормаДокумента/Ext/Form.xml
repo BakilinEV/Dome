@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
+	</CommandSet>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<Autofill>false</Autofill>
 		<ChildItems>
 			<ButtonGroup name="ГруппаКнопкиКоманднойПанели" id="133">
 				<Title>
@@ -109,7 +114,6 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -410,9 +414,18 @@
 							<EditMode>EnterOnInput</EditMode>
 							<Width>15</Width>
 							<HorizontalStretch>false</HorizontalStretch>
+							<DropListButton>true</DropListButton>
 							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInDropList</ChoiceButtonRepresentation>
+							<OpenButton>true</OpenButton>
+							<CreateButton>true</CreateButton>
+							<ChooseType>false</ChooseType>
 							<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="105"/>
 							<ExtendedTooltip name="ТоварыНоменклатураАртикулРасширеннаяПодсказка" id="106"/>
+							<Events>
+								<Event name="StartChoice">ТоварыНоменклатураАртикулНачалоВыбора</Event>
+								<Event name="StartListChoice">ТоварыНоменклатураАртикулНачалоВыбораИзСписка</Event>
+							</Events>
 						</InputField>
 						<InputField name="ТоварыНоменклатура" id="35">
 							<DataPath>Объект.Товары.Номенклатура</DataPath>
@@ -424,6 +437,7 @@
 							</ToolTip>
 							<EditMode>EnterOnInput</EditMode>
 							<Width>30</Width>
+							<ChooseType>false</ChooseType>
 							<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="37"/>
 							<Events>

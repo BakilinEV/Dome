@@ -73,9 +73,14 @@
 			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
 			<CommonPicture>НумерованыйСписок</CommonPicture>
 			<Role>РазделЗакупки</Role>
+			<CommonTemplate>Заявка</CommonTemplate>
+			<CommonTemplate>ЗаявкаТриЦены</CommonTemplate>
+			<CommonTemplate>Перечень2</CommonTemplate>
+			<CommonTemplate>Перечень3</CommonTemplate>
 			<CommonModule>ЕдиныйСклад</CommonModule>
 			<CommonModule>ОбменAPI</CommonModule>
 			<CommonModule>РегистрСведений</CommonModule>
+			<CommonModule>УправлениеПечатьюПереопределяемый</CommonModule>
 			<EventSubscription>РегистрСведенийПередЗаписью</EventSubscription>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
 			<FunctionalOption>ИспользоватьСтатусСрочности</FunctionalOption>

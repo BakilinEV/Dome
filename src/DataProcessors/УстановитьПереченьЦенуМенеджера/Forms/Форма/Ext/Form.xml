@@ -90,6 +90,12 @@
 					<ContextMenu name="ТаблицаДанныхДатаСозданияКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ТаблицаДанныхДатаСозданияРасширеннаяПодсказка" id="68"/>
 				</InputField>
+				<InputField name="ТаблицаДанныхНомерЗаявки" id="69">
+					<DataPath>ТаблицаДанных.НомерЗаявки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхНомерЗаявкиКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТаблицаДанныхНомерЗаявкиРасширеннаяПодсказка" id="71"/>
+				</InputField>
 				<InputField name="ТаблицаДанныхСрокПоставки" id="32">
 					<DataPath>ТаблицаДанных.СрокПоставки</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -447,6 +453,21 @@
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
 							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЗаявки" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заявки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>9</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
