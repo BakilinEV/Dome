@@ -83,6 +83,11 @@
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
+					<Button name="ОбщаяКомандаПрисоединенныеФайлы" id="277">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="ОбщаяКомандаПрисоединенныеФайлыРасширеннаяПодсказка" id="278"/>
+					</Button>
 					<Popup name="ПодменюЗаполнить" id="159">
 						<Title>
 							<v8:item>
@@ -203,6 +208,7 @@
 									<DataPath>Объект.АдресПоставки</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<DropListButton>true</DropListButton>
+									<ChooseType>false</ChooseType>
 									<ContextMenu name="АдресПоставкиКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="АдресПоставкиРасширеннаяПодсказка" id="15"/>
 									<Events>

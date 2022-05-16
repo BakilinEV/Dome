@@ -116,6 +116,7 @@
 			<InformationRegister>УдалитьЗаявкаСтроки</InformationRegister>
 			<InformationRegister>ЗаявкаАрхивные</InformationRegister>
 			<InformationRegister>ЗаявкаШаблонРегистра</InformationRegister>
+			<InformationRegister>ЗаявкиНеснижаемыйЗапас</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
