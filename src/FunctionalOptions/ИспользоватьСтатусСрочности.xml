@@ -14,7 +14,6 @@
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
 				<xr:Object>Catalog.СтатусСрочности</xr:Object>
-				<xr:Object>Document.Заявка.TabularSection.Товары.Attribute.СтатусСрочности</xr:Object>
 				<xr:Object>InformationRegister.ЗаявкаСтроки.Attribute.СтатусСрочности</xr:Object>
 			</Content>
 		</Properties>

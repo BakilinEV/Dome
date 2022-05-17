@@ -162,6 +162,12 @@
 								<InputField name="Номер" id="71">
 									<DataPath>Объект.Number</DataPath>
 									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер заявки</v8:content>
+										</v8:item>
+									</Title>
 									<TitleLocation>Left</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<HorizontalStretch>false</HorizontalStretch>
@@ -180,9 +186,6 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ДатаКонтекстноеМеню" id="75"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="76"/>
-									<Events>
-										<Event name="OnChange">ДатаПриИзменении</Event>
-									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -212,8 +215,7 @@
 									<ContextMenu name="АдресПоставкиКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="АдресПоставкиРасширеннаяПодсказка" id="15"/>
 									<Events>
-										<Event name="StartChoice">АдресПоставкиНачалоВыбора</Event>
-										<Event name="StartListChoice">АдресПоставкиНачалоВыбораИзСписка</Event>
+										<Event name="OnChange">АдресПоставкиПриИзменении</Event>
 									</Events>
 								</InputField>
 							</ChildItems>
@@ -267,10 +269,11 @@
 						</UsualGroup>
 						<InputField name="СрокПоставки" id="247">
 							<DataPath>Объект.СрокПоставки</DataPath>
+							<DropListButton>true</DropListButton>
 							<ContextMenu name="СрокПоставкиКонтекстноеМеню" id="248"/>
 							<ExtendedTooltip name="СрокПоставкиРасширеннаяПодсказка" id="249"/>
 							<Events>
-								<Event name="ChoiceProcessing">СрокПоставкиОбработкаВыбора</Event>
+								<Event name="OnChange">СрокПоставкиПриИзменении</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
@@ -338,6 +341,19 @@
 				<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 			</SearchControlAddition>
 			<ChildItems>
+				<CheckBoxField name="ТоварыПриоритет" id="119">
+					<DataPath>Объект.Товары.Приоритет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<ShowInHeader>false</ShowInHeader>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.AppearanceExclamationMarkIcon</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТоварыПриоритетКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ТоварыПриоритетРасширеннаяПодсказка" id="121"/>
+				</CheckBoxField>
 				<LabelField name="ТоварыНомерСтроки" id="32">
 					<DataPath>Объект.Товары.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -347,41 +363,6 @@
 					<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="34"/>
 				</LabelField>
-				<ColumnGroup name="ТоварыГруппаПриоритет" id="117">
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приоритет</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Width>3</Width>
-					<ShowTitle>false</ShowTitle>
-					<ShowInHeader>true</ShowInHeader>
-					<HeaderPicture>
-						<xr:Ref>StdPicture.AppearanceExclamationMark</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</HeaderPicture>
-					<ExtendedTooltip name="ТоварыГруппаПриоритетРасширеннаяПодсказка" id="118"/>
-					<ChildItems>
-						<CheckBoxField name="ТоварыПриоритет" id="119">
-							<DataPath>Объект.Товары.Приоритет</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ShowInHeader>false</ShowInHeader>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ТоварыПриоритетКонтекстноеМеню" id="120"/>
-							<ExtendedTooltip name="ТоварыПриоритетРасширеннаяПодсказка" id="121"/>
-						</CheckBoxField>
-						<InputField name="ТоварыСтатусСрочности" id="122">
-							<DataPath>Объект.Товары.СтатусСрочности</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ShowInHeader>false</ShowInHeader>
-							<Width>3</Width>
-							<MaxWidth>4</MaxWidth>
-							<ContextMenu name="ТоварыСтатусСрочностиКонтекстноеМеню" id="123"/>
-							<ExtendedTooltip name="ТоварыСтатусСрочностиРасширеннаяПодсказка" id="124"/>
-						</InputField>
-					</ChildItems>
-				</ColumnGroup>
 				<ColumnGroup name="ТоварыГруппаНоменклатура" id="273">
 					<Title>
 						<v8:item>
@@ -398,17 +379,15 @@
 					<Group>Horizontal</Group>
 					<ExtendedTooltip name="ТоварыГруппаНоменклатураРасширеннаяПодсказка" id="274"/>
 					<ChildItems>
-						<InputField name="ТоварыНоменклатураКод" id="107">
+						<LabelField name="ТоварыНоменклатураКод" id="107">
 							<DataPath>Объект.Товары.Номенклатура.Code</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<Width>6</Width>
-							<HorizontalStretch>false</HorizontalStretch>
 							<ContextMenu name="ТоварыНоменклатураКодКонтекстноеМеню" id="108"/>
 							<ExtendedTooltip name="ТоварыНоменклатураКодРасширеннаяПодсказка" id="109"/>
 							<Events>
 								<Event name="OnChange">ТоварыНоменклатураКодПриИзменении</Event>
 							</Events>
-						</InputField>
+						</LabelField>
 						<InputField name="ТоварыНоменклатураАртикул" id="104">
 							<DataPath>Объект.Товары.Артикул</DataPath>
 							<Title>
@@ -421,9 +400,6 @@
 							<Width>15</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<DropListButton>true</DropListButton>
-							<ChoiceButton>true</ChoiceButton>
-							<ChoiceButtonRepresentation>ShowInDropList</ChoiceButtonRepresentation>
-							<OpenButton>true</OpenButton>
 							<CreateButton>true</CreateButton>
 							<ChooseType>false</ChooseType>
 							<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="105"/>
