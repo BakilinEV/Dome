@@ -340,6 +340,10 @@
 				<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="30"/>
 				<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateField">ТоварыПриАктивизацииПоля</Event>
+				<Event name="OnStartEdit">ТоварыПриНачалеРедактирования</Event>
+			</Events>
 			<ChildItems>
 				<CheckBoxField name="ТоварыПриоритет" id="119">
 					<DataPath>Объект.Товары.Приоритет</DataPath>
@@ -393,7 +397,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Артикул / кат. номер</v8:content>
+									<v8:content>Кат. номер / Артикул</v8:content>
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
@@ -405,12 +409,12 @@
 							<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="105"/>
 							<ExtendedTooltip name="ТоварыНоменклатураАртикулРасширеннаяПодсказка" id="106"/>
 							<Events>
-								<Event name="StartChoice">ТоварыНоменклатураАртикулНачалоВыбора</Event>
-								<Event name="StartListChoice">ТоварыНоменклатураАртикулНачалоВыбораИзСписка</Event>
+								<Event name="AutoComplete">ТоварыНоменклатураАртикулАвтоПодбор</Event>
 							</Events>
 						</InputField>
 						<InputField name="ТоварыНоменклатура" id="35">
 							<DataPath>Объект.Товары.Номенклатура</DataPath>
+							<DefaultItem>true</DefaultItem>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -419,23 +423,27 @@
 							</ToolTip>
 							<EditMode>EnterOnInput</EditMode>
 							<Width>30</Width>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChooseType>false</ChooseType>
+							<ChoiceParameters>
+								<app:item name="Отбор.ПометкаУдаления">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:boolean">false</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
 							<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="37"/>
 							<Events>
 								<Event name="OnChange">ТоварыНоменклатураПриИзменении</Event>
+								<Event name="AutoComplete">ТоварыНоменклатураАвтоПодбор</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
 				<ColumnGroup name="ТоварыГруппаОстаток" id="267">
 					<Visible>false</Visible>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Остаток</v8:content>
-						</v8:item>
-					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -443,19 +451,13 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
-					<ShowInHeader>true</ShowInHeader>
+					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ТоварыГруппаОстатокРасширеннаяПодсказка" id="268"/>
 					<ChildItems>
 						<InputField name="ТоварыОстаток" id="264">
 							<DataPath>Объект.Товары.Остаток</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<SkipOnInput>true</SkipOnInput>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Организации</v8:content>
-								</v8:item>
-							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<OpenButton>true</OpenButton>
 							<ContextMenu name="ТоварыОстатокКонтекстноеМеню" id="265"/>
@@ -490,6 +492,14 @@
 							<Width>5</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<OpenButton>false</OpenButton>
+							<ChoiceParameters>
+								<app:item name="Отбор.ПометкаУдаления">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:boolean">false</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
 							<ContextMenu name="ТоварыЕдиницаИзмеренияКонтекстноеМеню" id="39"/>
 							<ExtendedTooltip name="ТоварыЕдиницаИзмеренияРасширеннаяПодсказка" id="40"/>
 						</InputField>
@@ -537,15 +547,31 @@
 								<InputField name="ТоварыОсновноеСредство" id="53">
 									<DataPath>Объект.Товары.ОсновноеСредство</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
 									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
 									<ContextMenu name="ТоварыОсновноеСредствоКонтекстноеМеню" id="54"/>
 									<ExtendedTooltip name="ТоварыОсновноеСредствоРасширеннаяПодсказка" id="55"/>
+									<Events>
+										<Event name="OnChange">ТоварыОсновноеСредствоПриИзменении</Event>
+										<Event name="Clearing">ТоварыОсновноеСредствоОчистка</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
 						<InputField name="ТоварыКомментарий" id="59">
 							<DataPath>Объект.Товары.Комментарий</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>true</DropListButton>
+							<ClearButton>true</ClearButton>
 							<ContextMenu name="ТоварыКомментарийКонтекстноеМеню" id="60"/>
 							<ExtendedTooltip name="ТоварыКомментарийРасширеннаяПодсказка" id="61"/>
 						</InputField>
@@ -706,23 +732,38 @@
 							</v8:NumberQualifiers>
 						</Type>
 					</Column>
-					<Column name="ОстатокЕдиногоСклада" id="2">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Единый склад</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:string</v8:Type>
-							<v8:StringQualifiers>
-								<v8:Length>0</v8:Length>
-								<v8:AllowedLength>Variable</v8:AllowedLength>
-							</v8:StringQualifiers>
-						</Type>
-					</Column>
 				</AdditionalColumns>
 			</Columns>
+		</Attribute>
+		<Attribute name="ИмяВыделеннойКолонки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя выделенной колонки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяТекущейКолонки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя текущей колонки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
