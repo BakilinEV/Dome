@@ -6,14 +6,14 @@
 			<Form>Document.Заявка.Form.ФормаСписка</Form>
 			<Height>100</Height>
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Item>
 		<Item>
 			<Form>Document.Заявка.Form.ФормаДокумента</Form>
 			<Height>100</Height>
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Item>
 	</LeftColumn>
