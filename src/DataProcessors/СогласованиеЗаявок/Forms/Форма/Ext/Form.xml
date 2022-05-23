@@ -224,12 +224,14 @@
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаСогласовать</CommandName>
 											<TextColor>web:Green</TextColor>
+											<BackColor>#DCFFDC</BackColor>
 											<ExtendedTooltip name="СтрокиНеобработанныеКомандаСогласоватьРасширеннаяПодсказка" id="205"/>
 										</Button>
 										<Button name="СтрокиНеобработанныеКомандаОтказать" id="206">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.Command.КомандаОтказать</CommandName>
 											<TextColor>web:Crimson</TextColor>
+											<BackColor>web:MistyRose</BackColor>
 											<ExtendedTooltip name="СтрокиНеобработанныеКомандаОтказатьРасширеннаяПодсказка" id="207"/>
 										</Button>
 									</ChildItems>
@@ -238,6 +240,7 @@
 						</CommandBar>
 						<InputField name="ШаблонКомментария" id="223">
 							<DataPath>ШаблонКомментария</DataPath>
+							<Visible>false</Visible>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ШаблонКомментарияКонтекстноеМеню" id="224"/>
 							<ExtendedTooltip name="ШаблонКомментарияРасширеннаяПодсказка" id="225"/>

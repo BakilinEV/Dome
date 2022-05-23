@@ -766,11 +766,20 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СкладПользователя" id="4">
+		<Attribute name="ОсновнойСклад" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Склад пользователя</v8:content>
+					<v8:content>Основной склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗапаснаяЧасть" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запасная часть</v8:content>
 				</v8:item>
 			</Title>
 			<Type/>
