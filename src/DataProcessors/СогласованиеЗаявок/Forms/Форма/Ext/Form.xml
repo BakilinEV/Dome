@@ -240,7 +240,6 @@
 						</CommandBar>
 						<InputField name="ШаблонКомментария" id="223">
 							<DataPath>ШаблонКомментария</DataPath>
-							<Visible>false</Visible>
 							<ClearButton>true</ClearButton>
 							<ContextMenu name="ШаблонКомментарияКонтекстноеМеню" id="224"/>
 							<ExtendedTooltip name="ШаблонКомментарияРасширеннаяПодсказка" id="225"/>

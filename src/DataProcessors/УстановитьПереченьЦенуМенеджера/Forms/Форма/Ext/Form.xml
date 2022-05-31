@@ -184,6 +184,12 @@
 				</InputField>
 				<InputField name="ТаблицаДанныхПеречень" id="47">
 					<DataPath>ТаблицаДанных.Перечень</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перечень закупа</v8:content>
+						</v8:item>
+					</ToolTip>
 					<EditMode>EnterOnInput</EditMode>
 					<ShowInHeader>false</ShowInHeader>
 					<HeaderPicture>
@@ -192,6 +198,9 @@
 					</HeaderPicture>
 					<Width>5</Width>
 					<ListChoiceMode>true</ListChoiceMode>
+					<ChooseType>false</ChooseType>
+					<MinValue xsi:type="xs:decimal">1</MinValue>
+					<MaxValue xsi:type="xs:decimal">3</MaxValue>
 					<ChoiceList>
 						<xr:Item>
 							<xr:Presentation/>
@@ -200,7 +209,7 @@
 								<Presentation>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>1</v8:content>
+										<v8:content>1 - Централизованный закуп</v8:content>
 									</v8:item>
 								</Presentation>
 								<Value xsi:type="xs:decimal">1</Value>
@@ -213,7 +222,7 @@
 								<Presentation>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>2</v8:content>
+										<v8:content>2 - Самостоятельный закуп у рекомендованных поставщиков</v8:content>
 									</v8:item>
 								</Presentation>
 								<Value xsi:type="xs:decimal">2</Value>
@@ -226,7 +235,7 @@
 								<Presentation>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>3</v8:content>
+										<v8:content>3 - Самостоятельный закуп (самостоятельный тендер)</v8:content>
 									</v8:item>
 								</Presentation>
 								<Value xsi:type="xs:decimal">3</Value>

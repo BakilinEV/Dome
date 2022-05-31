@@ -76,7 +76,7 @@
 			<CommonTemplate>Перечень3</CommonTemplate>
 			<CommonModule>ЕдиныйСклад</CommonModule>
 			<CommonModule>ОбменAPI</CommonModule>
-			<CommonModule>РегистрСведений</CommonModule>
+			<CommonModule>ПодпискиНаСобытия</CommonModule>
 			<CommonModule>УправлениеПечатьюПереопределяемый</CommonModule>
 			<EventSubscription>РегистрСведенийПередЗаписью</EventSubscription>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>

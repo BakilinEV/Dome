@@ -26,7 +26,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗаявкаОтветыПоставщиков</v8:Type>
 			</Source>
 			<Event>BeforeWrite</Event>
-			<Handler>CommonModule.РегистрСведений.ПередЗаписью</Handler>
+			<Handler>CommonModule.ПодпискиНаСобытия.ПередЗаписью</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

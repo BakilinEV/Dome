@@ -578,6 +578,13 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
+				<InputField name="ТоварыИдентификаторСтроки" id="279">
+					<DataPath>Объект.Товары.ИдентификаторСтроки</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТоварыИдентификаторСтрокиКонтекстноеМеню" id="280"/>
+					<ExtendedTooltip name="ТоварыИдентификаторСтрокиРасширеннаяПодсказка" id="281"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="ГруппаИтогиРеквизитыОрганизацииИКонтрагента" id="165">
