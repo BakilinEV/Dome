@@ -85,6 +85,7 @@
 			<Constant>ИспользоватьНесколькоОрганизаций</Constant>
 			<Constant>ИспользоватьСтатусСрочности</Constant>
 			<Constant>КонтрагентЮралс</Constant>
+			<Constant>ЗагружатьРекомендованныхПоставщиков</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Номенклатура</Catalog>
@@ -96,9 +97,10 @@
 			<Catalog>СтатусыЗаявки</Catalog>
 			<Catalog>СтатусСрочности</Catalog>
 			<Document>Заявка</Document>
-			<DataProcessor>ОбработкаЗаявок</DataProcessor>
+			<DataProcessor>ОбработкаЗаявокРассылка</DataProcessor>
 			<DataProcessor>УстановитьПереченьЦенуМенеджера</DataProcessor>
 			<DataProcessor>СогласованиеЗаявок</DataProcessor>
+			<DataProcessor>ОбработкаЗаявок</DataProcessor>
 			<InformationRegister>ЗаявкаПереченьОферт</InformationRegister>
 			<InformationRegister>ЗаявкаСтатусы</InformationRegister>
 			<InformationRegister>ЗаявкаСтроки</InformationRegister>

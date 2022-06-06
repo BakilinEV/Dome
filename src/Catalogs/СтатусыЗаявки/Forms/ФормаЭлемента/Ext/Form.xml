@@ -268,11 +268,11 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаРеквизитыТовары" id="33">
+						<UsualGroup name="ГруппаКолонкиТаблицыЖурнала" id="33">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Настройка реквизитов таблицы товаров</v8:content>
+									<v8:content>Настройка колонок таблицы журнала</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -282,7 +282,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<ExtendedTooltip name="ГруппаРеквизитыТоварыРасширеннаяПодсказка" id="34"/>
+							<ExtendedTooltip name="ГруппаКолонкиТаблицыЖурналаРасширеннаяПодсказка" id="34"/>
 							<ChildItems>
 								<Table name="Реквизиты" id="35">
 									<Representation>List</Representation>
@@ -737,7 +737,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда инвертировать флаги</v8:content>
+					<v8:content>Инвертировать флаги</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
