@@ -23,6 +23,13 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Item>
+		<Item>
+			<Form>Catalog.СтатусыЗаявки.Form.ФормаСписка</Form>
+			<Height>50</Height>
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Item>
 	</LeftColumn>
 	<RightColumn/>
 </HomePageWorkArea>

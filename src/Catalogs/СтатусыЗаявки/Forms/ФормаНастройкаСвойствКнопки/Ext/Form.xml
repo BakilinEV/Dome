@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКоманднаяПанель" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<CommandBar name="ГруппаКомандыФормы" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды формы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа команды формы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Button name="ФормаКомандаПрименить" id="32">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.КомандаПрименить</CommandName>
+							<ExtendedTooltip name="ФормаКомандаПрименитьРасширеннаяПодсказка" id="33"/>
+						</Button>
+						<Button name="ФормаЗакрыть" id="34">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="35"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<Button name="КнопкаОбразец" id="43">
+					<Type>UsualButton</Type>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаОбразец</CommandName>
+					<ExtendedTooltip name="КнопкаОбразецРасширеннаяПодсказка" id="44"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновные" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновныеРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<PictureField name="Картинка" id="4">
+					<DataPath>Картинка</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>3</MaxWidth>
+					<Height>1</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<PictureSize>AutoSize</PictureSize>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="КартинкаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="Click">КартинкаНажатие</Event>
+					</Events>
+				</PictureField>
+				<InputField name="ЗаголовокКнопки" id="1">
+					<DataPath>ЗаголовокКнопки</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок не указан</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ЗаголовокКнопкиКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ЗаголовокКнопкиРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Отображение" id="36">
+			<DataPath>Отображение</DataPath>
+			<ChooseType>false</ChooseType>
+			<ContextMenu name="ОтображениеКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ОтображениеРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="OnChange">ОформлениеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаОформление" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оформление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаОформлениеРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="ЦветФона" id="12">
+					<DataPath>ЦветФона</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ЦветФонаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ЦветФонаРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+						<Event name="Clearing">ОформлениеОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЦветТекста" id="15">
+					<DataPath>ЦветТекста</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ЦветТекстаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ЦветТекстаРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+						<Event name="Clearing">ОформлениеОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЦветРамки" id="7">
+					<DataPath>ЦветРамки</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ЦветРамкиКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЦветРамкиРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+						<Event name="Clearing">ОформлениеОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Шрифт" id="18">
+					<DataPath>Шрифт</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ШрифтКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ШрифтРасширеннаяПодсказка" id="20"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+						<Event name="Clearing">ОформлениеОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Фигура" id="21">
+					<DataPath>Фигура</DataPath>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ФигураКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ФигураРасширеннаяПодсказка" id="23"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтображениеФигуры" id="24">
+					<DataPath>ОтображениеФигуры</DataPath>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ОтображениеФигурыКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ОтображениеФигурыРасширеннаяПодсказка" id="26"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПоложениеКартинки" id="27">
+					<DataPath>ПоложениеКартинки</DataPath>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ПоложениеКартинкиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ПоложениеКартинкиРасширеннаяПодсказка" id="29"/>
+					<Events>
+						<Event name="OnChange">ОформлениеПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЦветФона" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Шрифт" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шрифт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Font</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветТекста" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет текста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЦветРамки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет рамки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Фигура" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фигура</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтображениеФигуры" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение фигуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПоложениеКартинки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Положение картинки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Картинка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокКнопки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Отображение" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПрименить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПрименить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаОбразец" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt; Образец &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда образец</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>

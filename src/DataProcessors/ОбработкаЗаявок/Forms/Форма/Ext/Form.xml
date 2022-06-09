@@ -27,22 +27,22 @@
 				<Event name="OnCurrentPageChange">ГруппаЖурналыВОжиданииПриСменеСтраницы</Event>
 			</Events>
 			<ChildItems>
-				<Page name="ГруппаВОжидании" id="232">
+				<Page name="ОбщийСписокВсе" id="232">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Заявки требующие внимания</v8:content>
+							<v8:content>Общий список</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа в ожидании</v8:content>
+							<v8:content>Общий список все</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппаВОжиданииРасширеннаяПодсказка" id="233"/>
+					<ExtendedTooltip name="ОбщийСписокВсеРасширеннаяПодсказка" id="233"/>
 					<ChildItems>
-						<Table name="СтрокиВОжидании" id="137">
+						<Table name="ТаблицаОжиданияВсе" id="137">
 							<TitleLocation>Auto</TitleLocation>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<InitialTreeView>ExpandAllLevels</InitialTreeView>
@@ -63,81 +63,83 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<ContextMenu name="СтрокиВОжиданииКонтекстноеМеню" id="138"/>
-							<AutoCommandBar name="СтрокиВОжиданииКоманднаяПанель" id="139">
-								<ChildItems>
-									<Button name="СтрокиВОжиданииИзменитьФорму" id="341">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-										<ExtendedTooltip name="СтрокиВОжиданииИзменитьФормуРасширеннаяПодсказка" id="342"/>
-									</Button>
-								</ChildItems>
-							</AutoCommandBar>
-							<ExtendedTooltip name="СтрокиВОжиданииРасширеннаяПодсказка" id="140"/>
-							<SearchStringAddition name="СтрокиВОжиданииСтрокаПоиска" id="141">
+							<ContextMenu name="ТаблицаОжиданияВсеКонтекстноеМеню" id="138"/>
+							<AutoCommandBar name="ТаблицаОжиданияВсеКоманднаяПанель" id="139"/>
+							<ExtendedTooltip name="ТаблицаОжиданияВсеРасширеннаяПодсказка" id="140"/>
+							<SearchStringAddition name="ТаблицаОжиданияВсеСтрокаПоиска" id="141">
 								<AdditionSource>
-									<Item>СтрокиВОжидании</Item>
+									<Item>ТаблицаОжиданияВсе</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиВОжиданииСтрокаПоискаКонтекстноеМеню" id="142"/>
-								<ExtendedTooltip name="СтрокиВОжиданииСтрокаПоискаРасширеннаяПодсказка" id="143"/>
+								<ContextMenu name="ТаблицаОжиданияВсеСтрокаПоискаКонтекстноеМеню" id="142"/>
+								<ExtendedTooltip name="ТаблицаОжиданияВсеСтрокаПоискаРасширеннаяПодсказка" id="143"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="СтрокиВОжиданииСостояниеПросмотра" id="144">
+							<ViewStatusAddition name="ТаблицаОжиданияВсеСостояниеПросмотра" id="144">
 								<AdditionSource>
-									<Item>СтрокиВОжидании</Item>
+									<Item>ТаблицаОжиданияВсе</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиВОжиданииСостояниеПросмотраКонтекстноеМеню" id="145"/>
-								<ExtendedTooltip name="СтрокиВОжиданииСостояниеПросмотраРасширеннаяПодсказка" id="146"/>
+								<ContextMenu name="ТаблицаОжиданияВсеСостояниеПросмотраКонтекстноеМеню" id="145"/>
+								<ExtendedTooltip name="ТаблицаОжиданияВсеСостояниеПросмотраРасширеннаяПодсказка" id="146"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="СтрокиВОжиданииУправлениеПоиском" id="147">
+							<SearchControlAddition name="ТаблицаОжиданияВсеУправлениеПоиском" id="147">
 								<AdditionSource>
-									<Item>СтрокиВОжидании</Item>
+									<Item>ТаблицаОжиданияВсе</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиВОжиданииУправлениеПоискомКонтекстноеМеню" id="148"/>
-								<ExtendedTooltip name="СтрокиВОжиданииУправлениеПоискомРасширеннаяПодсказка" id="149"/>
+								<ContextMenu name="ТаблицаОжиданияВсеУправлениеПоискомКонтекстноеМеню" id="148"/>
+								<ExtendedTooltip name="ТаблицаОжиданияВсеУправлениеПоискомРасширеннаяПодсказка" id="149"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="СтрокиНеобработанныеНомерЗаявки" id="159">
+								<LabelField name="ТаблицаОжиданияВсеНомер" id="383">
 									<DataPath>СтрокиВОжидании.НомерЗаявки</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеНомерЗаявкиКонтекстноеМеню" id="160"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеНомерЗаявкиРасширеннаяПодсказка" id="161"/>
+									<ContextMenu name="ТаблицаОжиданияВсеНомерКонтекстноеМеню" id="384"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеНомерРасширеннаяПодсказка" id="385"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеОтветственный" id="334">
+								<LabelField name="ТаблицаОжиданияВсеДата" id="386">
+									<DataPath>СтрокиВОжидании.Дата</DataPath>
+									<ContextMenu name="ТаблицаОжиданияВсеДатаКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеДатаРасширеннаяПодсказка" id="388"/>
+								</LabelField>
+								<LabelField name="ТаблицаОжиданияВсеОтветственный" id="389">
 									<DataPath>СтрокиВОжидании.Ответственный</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеОтветственныйКонтекстноеМеню" id="335"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеОтветственныйРасширеннаяПодсказка" id="336"/>
+									<ContextMenu name="ТаблицаОжиданияВсеОтветственныйКонтекстноеМеню" id="390"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеОтветственныйРасширеннаяПодсказка" id="391"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеНоменклатура" id="156">
+								<LabelField name="ТаблицаОжиданияВсеНоменклатура" id="392">
 									<DataPath>СтрокиВОжидании.Номенклатура</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеНоменклатураКонтекстноеМеню" id="157"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеНоменклатураРасширеннаяПодсказка" id="158"/>
+									<ContextMenu name="ТаблицаОжиданияВсеНоменклатураКонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеНоменклатураРасширеннаяПодсказка" id="394"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеКоличество" id="150">
+								<LabelField name="ТаблицаОжиданияВсеКоличество" id="395">
 									<DataPath>СтрокиВОжидании.Количество</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеКоличествоКонтекстноеМеню" id="151"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеКоличествоРасширеннаяПодсказка" id="152"/>
+									<ContextMenu name="ТаблицаОжиданияВсеКоличествоКонтекстноеМеню" id="396"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеКоличествоРасширеннаяПодсказка" id="397"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеЦена" id="168">
+								<LabelField name="ТаблицаОжиданияВсеЦена" id="398">
 									<DataPath>СтрокиВОжидании.Цена</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеЦенаКонтекстноеМеню" id="169"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеЦенаРасширеннаяПодсказка" id="170"/>
+									<ContextMenu name="ТаблицаОжиданияВсеЦенаКонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеЦенаРасширеннаяПодсказка" id="400"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеСумма" id="165">
+								<LabelField name="ТаблицаОжиданияВсеСумма" id="401">
 									<DataPath>СтрокиВОжидании.Сумма</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеСуммаКонтекстноеМеню" id="166"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеСуммаРасширеннаяПодсказка" id="167"/>
+									<ContextMenu name="ТаблицаОжиданияВсеСуммаКонтекстноеМеню" id="402"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеСуммаРасширеннаяПодсказка" id="403"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеОсновноеСредство" id="162">
+								<LabelField name="ТаблицаОжиданияВсеОсновноеСредство" id="404">
 									<DataPath>СтрокиВОжидании.ОсновноеСредство</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеОсновноеСредствоКонтекстноеМеню" id="163"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеОсновноеСредствоРасширеннаяПодсказка" id="164"/>
+									<ContextMenu name="ТаблицаОжиданияВсеОсновноеСредствоКонтекстноеМеню" id="405"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеОсновноеСредствоРасширеннаяПодсказка" id="406"/>
 								</LabelField>
-								<LabelField name="СтрокиНеобработанныеКомментарий" id="153">
+								<LabelField name="ТаблицаОжиданияВсеПримечание" id="407">
+									<DataPath>СтрокиВОжидании.Примечание</DataPath>
+									<ContextMenu name="ТаблицаОжиданияВсеПримечаниеКонтекстноеМеню" id="408"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеПримечаниеРасширеннаяПодсказка" id="409"/>
+								</LabelField>
+								<LabelField name="ТаблицаОжиданияВсеКомментарий" id="410">
 									<DataPath>СтрокиВОжидании.Комментарий</DataPath>
-									<ContextMenu name="СтрокиНеобработанныеКомментарийКонтекстноеМеню" id="154"/>
-									<ExtendedTooltip name="СтрокиНеобработанныеКомментарийРасширеннаяПодсказка" id="155"/>
+									<ContextMenu name="ТаблицаОжиданияВсеКомментарийКонтекстноеМеню" id="411"/>
+									<ExtendedTooltip name="ТаблицаОжиданияВсеКомментарийРасширеннаяПодсказка" id="412"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -212,6 +214,10 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомандРасширеннаяПодсказка" id="222"/>
 							<ChildItems>
+								<LabelDecoration name="ЯкорьВыпадающегоСписка" id="375">
+									<ContextMenu name="ЯкорьВыпадающегоСпискаКонтекстноеМеню" id="376"/>
+									<ExtendedTooltip name="ЯкорьВыпадающегоСпискаРасширеннаяПодсказка" id="377"/>
+								</LabelDecoration>
 								<CommandBar name="ГруппаКомандыДляОбработки" id="174">
 									<Title>
 										<v8:item>
@@ -229,7 +235,7 @@
 									<ChildItems>
 										<Button name="СтрокиНеобработанныеКомандаОбновить" id="216">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.КомандаНачатьОбработку</CommandName>
+											<CommandName>Form.Command.НачатьОбработку</CommandName>
 											<ExtendedTooltip name="СтрокиНеобработанныеКомандаОбновитьРасширеннаяПодсказка" id="217"/>
 										</Button>
 										<ButtonGroup name="ГруппаФлажки" id="212">
@@ -249,47 +255,88 @@
 											<ChildItems>
 												<Button name="СтрокиНеобработанныеКомандаУстановитьФлажки" id="208">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.КомандаУстановитьФлажки</CommandName>
+													<CommandName>Form.Command.УстановитьФлажки</CommandName>
 													<ExtendedTooltip name="СтрокиНеобработанныеКомандаУстановитьФлажкиРасширеннаяПодсказка" id="209"/>
 												</Button>
 												<Button name="СтрокиНеобработанныеКомандаСнятьФлажки" id="210">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.КомандаСнятьФлажки</CommandName>
+													<CommandName>Form.Command.СнятьФлажки</CommandName>
 													<ExtendedTooltip name="СтрокиНеобработанныеКомандаСнятьФлажкиРасширеннаяПодсказка" id="211"/>
 												</Button>
 											</ChildItems>
 										</ButtonGroup>
-										<ButtonGroup name="ГруппаКнопкиСогласования" id="214">
+										<ButtonGroup name="ГруппаКнопкиСменаСтатуса" id="214">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа кнопки согласования</v8:content>
+													<v8:content>Группа кнопки смена статуса</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа кнопки согласования</v8:content>
+													<v8:content>Группа кнопки смена статуса</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаКнопкиСогласованияРасширеннаяПодсказка" id="215"/>
+											<ExtendedTooltip name="ГруппаКнопкиСменаСтатусаРасширеннаяПодсказка" id="215"/>
 											<ChildItems>
-												<Button name="СтрокиНеобработанныеКомандаСогласовать" id="204">
+												<Button name="КнопкиСледующий" id="204">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.КомандаВыполнить</CommandName>
+													<CommandName>Form.Command.УстановитьСтатусСледующий</CommandName>
 													<TextColor>web:Green</TextColor>
 													<BackColor>#DCFFDC</BackColor>
-													<ExtendedTooltip name="СтрокиНеобработанныеКомандаСогласоватьРасширеннаяПодсказка" id="205"/>
+													<ExtendedTooltip name="КнопкиСледующийРасширеннаяПодсказка" id="205"/>
 												</Button>
-												<Button name="СтрокиНеобработанныеКомандаОтказать" id="206">
+												<Button name="КнопкиАльтернативный" id="381">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.КомандаОтказать</CommandName>
+													<CommandName>Form.Command.УстановитьСтатусАльтернативный</CommandName>
+													<TextColor>#003366</TextColor>
+													<BackColor>#CCFFFF</BackColor>
+													<BorderColor>#003366</BorderColor>
+													<ExtendedTooltip name="КнопкиАльтернативныйРасширеннаяПодсказка" id="382"/>
+												</Button>
+												<Button name="КнопкиОтказать" id="206">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УстановитьСтатусОтказать</CommandName>
 													<TextColor>web:Crimson</TextColor>
 													<BackColor>web:MistyRose</BackColor>
-													<ExtendedTooltip name="СтрокиНеобработанныеКомандаОтказатьРасширеннаяПодсказка" id="207"/>
+													<BorderColor>web:Crimson</BorderColor>
+													<ExtendedTooltip name="КнопкиОтказатьРасширеннаяПодсказка" id="207"/>
 												</Button>
 											</ChildItems>
 										</ButtonGroup>
+										<Popup name="ГруппаРасценкиПозиций" id="351">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расценка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа расценки позиций</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаРасценкиПозицийРасширеннаяПодсказка" id="352"/>
+											<ChildItems>
+												<Button name="УстановитьПеречень" id="362">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УстановитьПеречень</CommandName>
+													<ExtendedTooltip name="УстановитьПереченьРасширеннаяПодсказка" id="363"/>
+												</Button>
+												<Button name="УстановитьЦены" id="364">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УстановитьЦены</CommandName>
+													<ExtendedTooltip name="УстановитьЦеныРасширеннаяПодсказка" id="365"/>
+												</Button>
+												<Button name="УстановитьМенеджера" id="366">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.УстановитьМенеджера</CommandName>
+													<ExtendedTooltip name="УстановитьМенеджераРасширеннаяПодсказка" id="367"/>
+												</Button>
+											</ChildItems>
+										</Popup>
 									</ChildItems>
 								</CommandBar>
 								<UsualGroup name="ГруппаКомментарий" id="328">
@@ -317,7 +364,7 @@
 										</InputField>
 										<Button name="КомандаУстановитьКомментарий" id="332">
 											<Type>UsualButton</Type>
-											<CommandName>Form.Command.КомандаУстановитьКомментарий</CommandName>
+											<CommandName>Form.Command.УстановитьКомментарий</CommandName>
 											<ExtendedTooltip name="КомандаУстановитьКомментарийРасширеннаяПодсказка" id="333"/>
 										</Button>
 									</ChildItems>
@@ -340,10 +387,32 @@
 									<ChildItems>
 										<Button name="СтрокиДляСогласованияКомандаОтказатьОтОбработки" id="230">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.КомандаВернутьВОжидание</CommandName>
+											<CommandName>Form.Command.УстановитьСтатусПредыдущий</CommandName>
 											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 											<ExtendedTooltip name="СтрокиДляСогласованияКомандаОтказатьОтОбработкиРасширеннаяПодсказка" id="231"/>
 										</Button>
+										<ButtonGroup name="КомандыФормы" id="370">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды формы</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды формы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="КомандыФормыРасширеннаяПодсказка" id="371"/>
+											<ChildItems>
+												<Button name="СтрокиВРаботеИзменитьФорму" id="368">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+													<ExtendedTooltip name="СтрокиВРаботеИзменитьФормуРасширеннаяПодсказка" id="369"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
 									</ChildItems>
 								</CommandBar>
 							</ChildItems>
@@ -352,12 +421,36 @@
 							<Representation>List</Representation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СтрокиВРаботе</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="СтрокиВРаботеКонтекстноеМеню" id="177"/>
+							<ContextMenu name="СтрокиВРаботеКонтекстноеМеню" id="177">
+								<ChildItems>
+									<Button name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусСледующий" id="418">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьСтатусСледующий</CommandName>
+										<ExtendedTooltip name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусСледующийРасширеннаяПодсказка" id="419"/>
+									</Button>
+									<Button name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусАльтернативный" id="416">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьСтатусАльтернативный</CommandName>
+										<ExtendedTooltip name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусАльтернативныйРасширеннаяПодсказка" id="417"/>
+									</Button>
+									<Button name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусОтказать" id="420">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьСтатусОтказать</CommandName>
+										<ExtendedTooltip name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусОтказатьРасширеннаяПодсказка" id="421"/>
+									</Button>
+									<Button name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусПредыдущий" id="422">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьСтатусПредыдущий</CommandName>
+										<ExtendedTooltip name="СтрокиВРаботеКонтекстноеМенюУстановитьСтатусПредыдущийРасширеннаяПодсказка" id="423"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="СтрокиВРаботеКоманднаяПанель" id="178">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
@@ -386,42 +479,71 @@
 								<ContextMenu name="СтрокиВРаботеУправлениеПоискомКонтекстноеМеню" id="187"/>
 								<ExtendedTooltip name="СтрокиВРаботеУправлениеПоискомРасширеннаяПодсказка" id="188"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СтрокиВРаботеВыбор</Event>
+								<Event name="OnStartEdit">СтрокиВРаботеПриНачалеРедактирования</Event>
+							</Events>
 							<ChildItems>
-								<CheckBoxField name="СтрокиДляСогласованияВыбран" id="218">
+								<CheckBoxField name="СтрокиВРаботеВыбран" id="218">
 									<DataPath>СтрокиВРаботе.Выбран</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="СтрокиДляСогласованияВыбранКонтекстноеМеню" id="219"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияВыбранРасширеннаяПодсказка" id="220"/>
+									<ContextMenu name="СтрокиВРаботеВыбранКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="СтрокиВРаботеВыбранРасширеннаяПодсказка" id="220"/>
 								</CheckBoxField>
-								<InputField name="СтрокиДляСогласованияНоменклатура" id="189">
+								<InputField name="СтрокиВРаботеНомерЗаявки" id="372">
+									<DataPath>СтрокиВРаботе.НомерЗаявки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<Width>10</Width>
+									<ContextMenu name="СтрокиВРаботеНомерЗаявкиКонтекстноеМеню" id="373"/>
+									<ExtendedTooltip name="СтрокиВРаботеНомерЗаявкиРасширеннаяПодсказка" id="374"/>
+								</InputField>
+								<InputField name="СтрокиВРаботеДата" id="413">
+									<DataPath>СтрокиВРаботе.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтрокиВРаботеДатаКонтекстноеМеню" id="414"/>
+									<ExtendedTooltip name="СтрокиВРаботеДатаРасширеннаяПодсказка" id="415"/>
+								</InputField>
+								<InputField name="СтрокиВРаботеНоменклатура" id="189">
 									<DataPath>СтрокиВРаботе.Номенклатура</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияНоменклатураКонтекстноеМеню" id="190"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияНоменклатураРасширеннаяПодсказка" id="191"/>
+									<ContextMenu name="СтрокиВРаботеНоменклатураКонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="СтрокиВРаботеНоменклатураРасширеннаяПодсказка" id="191"/>
 								</InputField>
-								<InputField name="СтрокиДляСогласованияКоличество" id="192">
+								<InputField name="СтрокиВРаботеКоличество" id="192">
 									<DataPath>СтрокиВРаботе.Количество</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияКоличествоКонтекстноеМеню" id="193"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияКоличествоРасширеннаяПодсказка" id="194"/>
+									<Width>10</Width>
+									<ContextMenu name="СтрокиВРаботеКоличествоКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="СтрокиВРаботеКоличествоРасширеннаяПодсказка" id="194"/>
+									<Events>
+										<Event name="OnChange">СтрокиДляСогласованияКоличествоЦенаПриИзменении</Event>
+									</Events>
 								</InputField>
-								<InputField name="СтрокиДляСогласованияЦена" id="198">
+								<InputField name="СтрокиВРаботеЦена" id="198">
 									<DataPath>СтрокиВРаботе.Цена</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияЦенаКонтекстноеМеню" id="199"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияЦенаРасширеннаяПодсказка" id="200"/>
+									<Width>10</Width>
+									<DropListButton>true</DropListButton>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="СтрокиВРаботеЦенаКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="СтрокиВРаботеЦенаРасширеннаяПодсказка" id="200"/>
+									<Events>
+										<Event name="OnChange">СтрокиДляСогласованияКоличествоЦенаПриИзменении</Event>
+										<Event name="StartChoice">СтрокиДляСогласованияЦенаНачалоВыбора</Event>
+									</Events>
 								</InputField>
-								<InputField name="СтрокиДляСогласованияСумма" id="201">
+								<InputField name="СтрокиВРаботеСумма" id="201">
 									<DataPath>СтрокиВРаботе.Сумма</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияСуммаКонтекстноеМеню" id="202"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияСуммаРасширеннаяПодсказка" id="203"/>
+									<Width>10</Width>
+									<ContextMenu name="СтрокиВРаботеСуммаКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="СтрокиВРаботеСуммаРасширеннаяПодсказка" id="203"/>
 								</InputField>
 								<InputField name="СтрокиВРаботеКонтрагент" id="343">
 									<DataPath>СтрокиВРаботе.Контрагент</DataPath>
@@ -429,18 +551,84 @@
 									<ContextMenu name="СтрокиВРаботеКонтрагентКонтекстноеМеню" id="344"/>
 									<ExtendedTooltip name="СтрокиВРаботеКонтрагентРасширеннаяПодсказка" id="345"/>
 								</InputField>
-								<InputField name="СтрокиДляСогласованияОсновноеСредство" id="195">
+								<InputField name="СтрокиВРаботеПеречень" id="353">
+									<DataPath>СтрокиВРаботе.Перечень</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.НумерованыйСписок</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<MaxValue xsi:type="xs:decimal">3</MaxValue>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>1 - Централизованный закуп</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>2 - Самостоятельный закуп у рекомендованных поставщиков</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>3 - Самостоятельный закуп (самостоятельный тендер)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">3</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СтрокиВРаботеПереченьКонтекстноеМеню" id="354"/>
+									<ExtendedTooltip name="СтрокиВРаботеПереченьРасширеннаяПодсказка" id="355"/>
+								</InputField>
+								<InputField name="СтрокиВРаботеОсновноеСредство" id="195">
 									<DataPath>СтрокиВРаботе.ОсновноеСредство</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияОсновноеСредствоКонтекстноеМеню" id="196"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияОсновноеСредствоРасширеннаяПодсказка" id="197"/>
+									<ContextMenu name="СтрокиВРаботеОсновноеСредствоКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="СтрокиВРаботеОсновноеСредствоРасширеннаяПодсказка" id="197"/>
 								</InputField>
-								<InputField name="СтрокиДляСогласованияКомментарий" id="313">
+								<InputField name="СтрокиВРаботеПримечание" id="424">
+									<DataPath>СтрокиВРаботе.Примечание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтрокиВРаботеПримечаниеКонтекстноеМеню" id="425"/>
+									<ExtendedTooltip name="СтрокиВРаботеПримечаниеРасширеннаяПодсказка" id="426"/>
+								</InputField>
+								<InputField name="СтрокиВРаботеМенеджер" id="378">
+									<DataPath>СтрокиВРаботе.Менеджер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтрокиВРаботеМенеджерКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="СтрокиВРаботеМенеджерРасширеннаяПодсказка" id="380"/>
+								</InputField>
+								<InputField name="СтрокиВРаботеКомментарий" id="313">
 									<DataPath>СтрокиВРаботе.Комментарий</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СтрокиДляСогласованияКомментарийКонтекстноеМеню" id="314"/>
-									<ExtendedTooltip name="СтрокиДляСогласованияКомментарийРасширеннаяПодсказка" id="315"/>
+									<ContextMenu name="СтрокиВРаботеКомментарийКонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="СтрокиВРаботеКомментарийРасширеннаяПодсказка" id="315"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -461,7 +649,7 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОбработанныеРасширеннаяПодсказка" id="239"/>
 					<ChildItems>
-						<Table name="СтрокиСогласованные" id="242">
+						<Table name="СтрокиОбработанные" id="242">
 							<ReadOnly>true</ReadOnly>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -480,76 +668,74 @@
 							<ShowRoot>true</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<ContextMenu name="СтрокиСогласованныеКонтекстноеМеню" id="243"/>
-							<AutoCommandBar name="СтрокиСогласованныеКоманднаяПанель" id="244">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
-							<ExtendedTooltip name="СтрокиСогласованныеРасширеннаяПодсказка" id="245"/>
-							<SearchStringAddition name="СтрокиСогласованныеСтрокаПоиска" id="246">
+							<ContextMenu name="СтрокиОбработанныеКонтекстноеМеню" id="243"/>
+							<AutoCommandBar name="СтрокиОбработанныеКоманднаяПанель" id="244"/>
+							<ExtendedTooltip name="СтрокиОбработанныеРасширеннаяПодсказка" id="245"/>
+							<SearchStringAddition name="СтрокиОбработанныеСтрокаПоиска" id="246">
 								<AdditionSource>
-									<Item>СтрокиСогласованные</Item>
+									<Item>СтрокиОбработанные</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиСогласованныеСтрокаПоискаКонтекстноеМеню" id="247"/>
-								<ExtendedTooltip name="СтрокиСогласованныеСтрокаПоискаРасширеннаяПодсказка" id="248"/>
+								<ContextMenu name="СтрокиОбработанныеСтрокаПоискаКонтекстноеМеню" id="247"/>
+								<ExtendedTooltip name="СтрокиОбработанныеСтрокаПоискаРасширеннаяПодсказка" id="248"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="СтрокиСогласованныеСостояниеПросмотра" id="249">
+							<ViewStatusAddition name="СтрокиОбработанныеСостояниеПросмотра" id="249">
 								<AdditionSource>
-									<Item>СтрокиСогласованные</Item>
+									<Item>СтрокиОбработанные</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиСогласованныеСостояниеПросмотраКонтекстноеМеню" id="250"/>
-								<ExtendedTooltip name="СтрокиСогласованныеСостояниеПросмотраРасширеннаяПодсказка" id="251"/>
+								<ContextMenu name="СтрокиОбработанныеСостояниеПросмотраКонтекстноеМеню" id="250"/>
+								<ExtendedTooltip name="СтрокиОбработанныеСостояниеПросмотраРасширеннаяПодсказка" id="251"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="СтрокиСогласованныеУправлениеПоиском" id="252">
+							<SearchControlAddition name="СтрокиОбработанныеУправлениеПоиском" id="252">
 								<AdditionSource>
-									<Item>СтрокиСогласованные</Item>
+									<Item>СтрокиОбработанные</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="СтрокиСогласованныеУправлениеПоискомКонтекстноеМеню" id="253"/>
-								<ExtendedTooltip name="СтрокиСогласованныеУправлениеПоискомРасширеннаяПодсказка" id="254"/>
+								<ContextMenu name="СтрокиОбработанныеУправлениеПоискомКонтекстноеМеню" id="253"/>
+								<ExtendedTooltip name="СтрокиОбработанныеУправлениеПоискомРасширеннаяПодсказка" id="254"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="СтрокиСогласованныеДатаСогласования" id="316">
-									<DataPath>СтрокиОбработанные.ДатаСогласования</DataPath>
-									<Width>7</Width>
-									<ContextMenu name="СтрокиСогласованныеДатаСогласованияКонтекстноеМеню" id="317"/>
-									<ExtendedTooltip name="СтрокиСогласованныеДатаСогласованияРасширеннаяПодсказка" id="318"/>
+								<LabelField name="СтрокиОбработанныеДатаСтатуса" id="348">
+									<DataPath>СтрокиОбработанные.ДатаСтатуса</DataPath>
+									<Width>8</Width>
+									<ContextMenu name="СтрокиОбработанныеДатаСтатусаКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="СтрокиОбработанныеДатаСтатусаРасширеннаяПодсказка" id="350"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеНомерЗаявки" id="264">
+								<LabelField name="СтрокиОбработанныеНомерЗаявки" id="264">
 									<DataPath>СтрокиОбработанные.НомерЗаявки</DataPath>
-									<ContextMenu name="СтрокиСогласованныеНомерЗаявкиКонтекстноеМеню" id="265"/>
-									<ExtendedTooltip name="СтрокиСогласованныеНомерЗаявкиРасширеннаяПодсказка" id="266"/>
+									<ContextMenu name="СтрокиОбработанныеНомерЗаявкиКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="СтрокиОбработанныеНомерЗаявкиРасширеннаяПодсказка" id="266"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеНоменклатура" id="261">
+								<LabelField name="СтрокиОбработанныеНоменклатура" id="261">
 									<DataPath>СтрокиОбработанные.Номенклатура</DataPath>
-									<ContextMenu name="СтрокиСогласованныеНоменклатураКонтекстноеМеню" id="262"/>
-									<ExtendedTooltip name="СтрокиСогласованныеНоменклатураРасширеннаяПодсказка" id="263"/>
+									<ContextMenu name="СтрокиОбработанныеНоменклатураКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="СтрокиОбработанныеНоменклатураРасширеннаяПодсказка" id="263"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеКоличество" id="255">
+								<LabelField name="СтрокиОбработанныеКоличество" id="255">
 									<DataPath>СтрокиОбработанные.Количество</DataPath>
-									<ContextMenu name="СтрокиСогласованныеКоличествоКонтекстноеМеню" id="256"/>
-									<ExtendedTooltip name="СтрокиСогласованныеКоличествоРасширеннаяПодсказка" id="257"/>
+									<ContextMenu name="СтрокиОбработанныеКоличествоКонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="СтрокиОбработанныеКоличествоРасширеннаяПодсказка" id="257"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеЦена" id="273">
+								<LabelField name="СтрокиОбработанныеЦена" id="273">
 									<DataPath>СтрокиОбработанные.Цена</DataPath>
-									<ContextMenu name="СтрокиСогласованныеЦенаКонтекстноеМеню" id="274"/>
-									<ExtendedTooltip name="СтрокиСогласованныеЦенаРасширеннаяПодсказка" id="275"/>
+									<ContextMenu name="СтрокиОбработанныеЦенаКонтекстноеМеню" id="274"/>
+									<ExtendedTooltip name="СтрокиОбработанныеЦенаРасширеннаяПодсказка" id="275"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеСумма" id="270">
+								<LabelField name="СтрокиОбработанныеСумма" id="270">
 									<DataPath>СтрокиОбработанные.Сумма</DataPath>
-									<ContextMenu name="СтрокиСогласованныеСуммаКонтекстноеМеню" id="271"/>
-									<ExtendedTooltip name="СтрокиСогласованныеСуммаРасширеннаяПодсказка" id="272"/>
+									<ContextMenu name="СтрокиОбработанныеСуммаКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="СтрокиОбработанныеСуммаРасширеннаяПодсказка" id="272"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеОсновноеСредство" id="267">
+								<LabelField name="СтрокиОбработанныеОсновноеСредство" id="267">
 									<DataPath>СтрокиОбработанные.ОсновноеСредство</DataPath>
-									<ContextMenu name="СтрокиСогласованныеОсновноеСредствоКонтекстноеМеню" id="268"/>
-									<ExtendedTooltip name="СтрокиСогласованныеОсновноеСредствоРасширеннаяПодсказка" id="269"/>
+									<ContextMenu name="СтрокиОбработанныеОсновноеСредствоКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="СтрокиОбработанныеОсновноеСредствоРасширеннаяПодсказка" id="269"/>
 								</LabelField>
-								<LabelField name="СтрокиСогласованныеКомментарий" id="258">
+								<LabelField name="СтрокиОбработанныеКомментарий" id="258">
 									<DataPath>СтрокиОбработанные.Комментарий</DataPath>
-									<ContextMenu name="СтрокиСогласованныеКомментарийКонтекстноеМеню" id="259"/>
-									<ExtendedTooltip name="СтрокиСогласованныеКомментарийРасширеннаяПодсказка" id="260"/>
+									<ContextMenu name="СтрокиОбработанныеКомментарийКонтекстноеМеню" id="259"/>
+									<ExtendedTooltip name="СтрокиОбработанныеКомментарийРасширеннаяПодсказка" id="260"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -590,9 +776,7 @@
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
 							<ContextMenu name="СтрокиОтмененныеКонтекстноеМеню" id="280"/>
-							<AutoCommandBar name="СтрокиОтмененныеКоманднаяПанель" id="281">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
+							<AutoCommandBar name="СтрокиОтмененныеКоманднаяПанель" id="281"/>
 							<ExtendedTooltip name="СтрокиОтмененныеРасширеннаяПодсказка" id="282"/>
 							<SearchStringAddition name="СтрокиОтмененныеСтрокаПоиска" id="283">
 								<AdditionSource>
@@ -689,25 +873,33 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗаявкаСтроки.НомерЗаявки КАК НомерЗаявки,
+	ЗаявкаСтатусы.Период КАК Дата,
 	ЗаявкаСтроки.Номенклатура КАК Номенклатура,
 	ЕСТЬNULL(ЗаявкаЦены.Количество, ЗаявкаСтроки.Количество) КАК Количество,
 	ЗаявкаСтроки.ОсновноеСредство КАК ОсновноеСредство,
-	ЗаявкаСтроки.Комментарий КАК Комментарий,
+	ЗаявкаСтроки.Комментарий КАК Примечание,
 	ЕСТЬNULL(ЗаявкаЦены.Цена, "-") КАК Цена,
 	ЕСТЬNULL(ЗаявкаЦены.Цена, 0) * ЕСТЬNULL(ЗаявкаЦены.Количество, ЗаявкаСтроки.Количество) КАК Сумма,
 	ЗаявкаСтроки.ИдентификаторСтроки КАК ИдентификаторСтроки,
-	ЗаявкаСтроки.Ответственный КАК Ответственный
+	ЗаявкаСтроки.Ответственный КАК Ответственный,
+	ЗаявкаЦены.Контрагент КАК Контрагент,
+	ЗаявкаЦены.Перечень КАК Перечень,
+	ЗаявкаМенеджеры.Менеджер КАК Менеджер,
+	ЗаявкаСтатусы.Комментарий КАК Комментарий
 ИЗ
 	РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусы
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ПО ЗаявкаСтатусы.ИдентификаторСтроки = ЗаявкаСтроки.ИдентификаторСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаЦены.СрезПоследних КАК ЗаявкаЦены
 		ПО ЗаявкаСтатусы.ИдентификаторСтроки = ЗаявкаЦены.ИдентификаторСтроки
-//ГДЕ
-//	(ЗаявкаСтатусы.Статус.Следующий.Согласование
-//			ИЛИ ЗаявкаСтатусы.Статус.Следующий1.Согласование
-//			ИЛИ ЗаявкаСтатусы.Статус.Следующий2.Согласование
-//			ИЛИ ЗаявкаСтатусы.Статус.Следующий3.Согласование)</QueryText>
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаМенеджеры.СрезПоследних КАК ЗаявкаМенеджеры
+		ПО ЗаявкаСтатусы.ИдентификаторСтроки = ЗаявкаМенеджеры.ИдентификаторСтроки
+ГДЕ
+//	&amp;Статус В (ЗаявкаСтатусы.Статус.Следующий, ЗаявкаСтатусы.Статус.Следующий1, ЗаявкаСтатусы.Статус.Следующий2, ЗаявкаСтатусы.Статус.Следующий3)
+	(ЗаявкаСтатусы.Статус.Следующий В (&amp;Статус)
+			ИЛИ ЗаявкаСтатусы.Статус.Следующий1 В (&amp;Статус)
+			ИЛИ ЗаявкаСтатусы.Статус.Следующий2 В (&amp;Статус)
+			ИЛИ ЗаявкаСтатусы.Статус.Следующий3 В (&amp;Статус))</QueryText>
 				<KeyField>ИдентификаторСтроки</KeyField>
 				<ListSettings>
 					<dcsset:filter>
@@ -715,6 +907,14 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>НомерЗаявки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -725,6 +925,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:use>false</dcsset:use>
 								<dcsset:field>НомерЗаявки</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
@@ -887,6 +1088,61 @@
 						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
 					</Type>
 				</Column>
+				<Column name="НомерЗаявки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заявки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Менеджер" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Примечание" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примечание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ШаблонКомментария" id="4">
@@ -919,11 +1175,11 @@
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	СтатусыЗаявки.Следующий КАК Ссылка
-ПОМЕСТИТЬ СтатусПослеСогласования
+ПОМЕСТИТЬ СтатусСледующий
 ИЗ
 	Справочник.СтатусыЗаявки КАК СтатусыЗаявки
 ГДЕ
-	СтатусыЗаявки.Согласование
+	СтатусыЗаявки.Ссылка В(&amp;Статус)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -932,7 +1188,7 @@
 ИЗ
 	Справочник.СтатусыЗаявки КАК СтатусыЗаявки
 ГДЕ
-	СтатусыЗаявки.Согласование
+	СтатусыЗаявки.Ссылка В(&amp;Статус)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -941,7 +1197,7 @@
 ИЗ
 	Справочник.СтатусыЗаявки КАК СтатусыЗаявки
 ГДЕ
-	СтатусыЗаявки.Согласование
+	СтатусыЗаявки.Ссылка В(&amp;Статус)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -950,7 +1206,7 @@
 ИЗ
 	Справочник.СтатусыЗаявки КАК СтатусыЗаявки
 ГДЕ
-	СтатусыЗаявки.Согласование
+	СтатусыЗаявки.Ссылка В(&amp;Статус)
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -962,11 +1218,11 @@
 	ЕСТЬNULL(ЗаявкаЦены.Цена * ЕСТЬNULL(ЗаявкаЦены.Количество, ЗаявкаСтроки.Количество), 0) КАК Сумма,
 	ЗаявкаСтроки.ОсновноеСредство КАК ОсновноеСредство,
 	ЗаявкаСтатусы.Комментарий КАК Комментарий,
-	ЗаявкаСтатусы.Период КАК ДатаСогласования
+	ЗаявкаСтатусы.Период КАК ДатаСтатуса
 ИЗ
 	РегистрСведений.ЗаявкаСтатусы.СрезПоследних КАК ЗаявкаСтатусы
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СтатусПослеСогласования КАК СтатусПослеСогласования
-		ПО ЗаявкаСтатусы.Статус = СтатусПослеСогласования.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СтатусСледующий КАК СтатусСледующий
+		ПО ЗаявкаСтатусы.Статус = СтатусСледующий.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаСтроки КАК ЗаявкаСтроки
 		ПО ЗаявкаСтатусы.ИдентификаторСтроки = ЗаявкаСтроки.ИдентификаторСтроки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗаявкаЦены.СрезПоследних КАК ЗаявкаЦены
@@ -977,6 +1233,15 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>НомерЗаявки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаСтатуса</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -1025,6 +1290,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаОтмены</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -1076,9 +1345,31 @@
 				<v8:Type>cfg:CatalogRef.СтатусыЗаявки</v8:Type>
 			</Settings>
 		</Attribute>
+		<Attribute name="КонтрагентЮралс" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент юралс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Менеджер" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="КомандаВыполнить" id="1">
+		<Command name="УстановитьСтатусСледующий" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1088,21 +1379,21 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
+					<v8:content>Установить следующий статус</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>КомандаВыполнить</Action>
+			<Action>УстановитьСтатусСледующий</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="КомандаУстановитьФлажки" id="2">
+		<Command name="УстановитьФлажки" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда установить флажки</v8:content>
+					<v8:content>Установить флажки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1117,17 +1408,17 @@
 			</Picture>
 			<Action>КомандаУстановитьФлажки</Action>
 		</Command>
-		<Command name="КомандаОтказать" id="3">
+		<Command name="УстановитьСтатусОтказать" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отказать</v8:content>
+					<v8:content>Установить статус отказать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отказать</v8:content>
+					<v8:content>Установить статус отказать</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1137,11 +1428,11 @@
 			<Action>КомандаОтказать</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="КомандаСнятьФлажки" id="5">
+		<Command name="СнятьФлажки" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда снять флажки</v8:content>
+					<v8:content>Снять флажки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1156,7 +1447,7 @@
 			</Picture>
 			<Action>КомандаСнятьФлажки</Action>
 		</Command>
-		<Command name="КомандаНачатьОбработку" id="4">
+		<Command name="НачатьОбработку" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1166,7 +1457,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Начать обработку заявок требующих согласования</v8:content>
+					<v8:content>Начать обработку заявок</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1176,17 +1467,17 @@
 			<Action>КомандаНачатьОбработку</Action>
 			<Representation>Picture</Representation>
 		</Command>
-		<Command name="КомандаВернутьВОжидание" id="6">
+		<Command name="УстановитьСтатусПредыдущий" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Вернуть в ожидание</v8:content>
+					<v8:content>Предыдущий статус</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отказать от обработки заявок и вернуть в режим ожидания согласования</v8:content>
+					<v8:content>Отказать от обработки заявок и вернуть в предыдущий статус ожидания обработки</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1194,9 +1485,9 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаВернутьВОжидание</Action>
-			<Representation>Picture</Representation>
+			<Representation>TextPicture</Representation>
 		</Command>
-		<Command name="КомандаУстановитьКомментарий" id="7">
+		<Command name="УстановитьКомментарий" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1215,6 +1506,83 @@
 			</Picture>
 			<Action>КомандаУстановитьКомментарий</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УстановитьМенеджера" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить менеджера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить менеджера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.User</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьМенеджера</Action>
+		</Command>
+		<Command name="УстановитьПеречень" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить перечень</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить перечень</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НумерованыйСписок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьПеречень</Action>
+		</Command>
+		<Command name="УстановитьЦены" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьЦены</Action>
+		</Command>
+		<Command name="УстановитьСтатусАльтернативный" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить альтернативный статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCircleFilled</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьСтатусАльтернативный</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

@@ -172,11 +172,11 @@
 		<ChildObjects>
 			<Resource uuid="5d83dd5f-42d4-4ddb-bc92-0bb785c2ad4d">
 				<Properties>
-					<Name>СогласованаЦена</Name>
+					<Name>Согласовано</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Согласована цена</v8:content>
+							<v8:content>Согласовано</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -86,21 +86,128 @@
 				</LabelField>
 				<LabelField name="Заголовок" id="22">
 					<DataPath>Список.Заголовок</DataPath>
+					<Visible>false</Visible>
 					<ContextMenu name="ЗаголовокКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="24"/>
 				</LabelField>
-				<LabelField name="Следующий" id="25">
-					<DataPath>Список.Следующий</DataPath>
-					<ContextMenu name="СледующийКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="СледующийРасширеннаяПодсказка" id="27"/>
-				</LabelField>
-				<LabelField name="Предыдущий" id="28">
-					<DataPath>Список.Предыдущий</DataPath>
-					<ContextMenu name="ПредыдущийКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ПредыдущийРасширеннаяПодсказка" id="30"/>
-				</LabelField>
+				<ColumnGroup name="ГруппаСледующий" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа следующий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа следующий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСледующийРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelField name="Следующий" id="25">
+							<DataPath>Список.Следующий</DataPath>
+							<ContextMenu name="СледующийКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СледующийРасширеннаяПодсказка" id="27"/>
+						</LabelField>
+						<ColumnGroup name="ГруппаСледующийПеречень" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа следующий перечень</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа следующий перечень</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаСледующийПереченьРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<LabelField name="Следующий1" id="34">
+									<DataPath>Список.Следующий1</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 1</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Следующий1КонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="Следующий1РасширеннаяПодсказка" id="36"/>
+								</LabelField>
+								<LabelField name="Следующий2" id="37">
+									<DataPath>Список.Следующий2</DataPath>
+									<ContextMenu name="Следующий2КонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="Следующий2РасширеннаяПодсказка" id="39"/>
+								</LabelField>
+								<LabelField name="Следующий3" id="40">
+									<DataPath>Список.Следующий3</DataPath>
+									<ContextMenu name="Следующий3КонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="Следующий3РасширеннаяПодсказка" id="42"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаАльтернативный" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Альтернативный</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа альтернативный</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАльтернативныйРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<LabelField name="Предыдущий" id="28">
+							<DataPath>~Список.Предыдущий</DataPath>
+							<ContextMenu name="ПредыдущийКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПредыдущийРасширеннаяПодсказка" id="30"/>
+						</LabelField>
+						<ColumnGroup name="ГруппаАльтернативныйПеречень" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа альтернативный перечень</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа альтернативный перечень</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаАльтернативныйПереченьРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<LabelField name="Предыдущий1" id="51">
+									<DataPath>~Список.Предыдущий1</DataPath>
+									<ContextMenu name="Предыдущий1КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="Предыдущий1РасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<LabelField name="Предыдущий2" id="54">
+									<DataPath>~Список.Предыдущий2</DataPath>
+									<ContextMenu name="Предыдущий2КонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="Предыдущий2РасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<LabelField name="Предыдущий3" id="57">
+									<DataPath>~Список.Предыдущий3</DataPath>
+									<ContextMenu name="Предыдущий3КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="Предыдущий3РасширеннаяПодсказка" id="59"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
 				<CheckBoxField name="Согласование" id="31">
-					<DataPath>Список.Согласование</DataPath>
+					<DataPath>~Список.Согласование</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СогласованиеКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="СогласованиеРасширеннаяПодсказка" id="33"/>

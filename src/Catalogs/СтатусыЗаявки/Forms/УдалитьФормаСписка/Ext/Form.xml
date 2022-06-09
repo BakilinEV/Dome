@@ -89,7 +89,7 @@
 					<ExtendedTooltip name="СледующийРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<CheckBoxField name="Согласование" id="31">
-					<DataPath>Список.Согласование</DataPath>
+					<DataPath>~Список.Согласование</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СогласованиеКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="СогласованиеРасширеннаяПодсказка" id="33"/>

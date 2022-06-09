@@ -32,7 +32,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Hierarchical>true</Hierarchical>
+			<Hierarchical>false</Hierarchical>
 			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
 			<LimitLevelCount>true</LimitLevelCount>
 			<LevelCount>2</LevelCount>
@@ -61,7 +61,7 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.СтатусыЗаявки.Form.ФормаЭлемента</DefaultObjectForm>
-			<DefaultFolderForm>Catalog.СтатусыЗаявки.Form.ФормаГруппы</DefaultFolderForm>
+			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.СтатусыЗаявки.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
@@ -133,10 +133,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Заголовок</v8:content>
+							<v8:content>Заголовок кнопки </v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Заголовок кнопки для следующего статуса</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -173,11 +173,11 @@
 			</Attribute>
 			<Attribute uuid="a00a335e-40a6-4f84-b556-c2c8ea0666e5">
 				<Properties>
-					<Name>Согласование</Name>
+					<Name>Ожидающий</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Согласование</v8:content>
+							<v8:content>Ожидающий</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -253,11 +253,11 @@
 			</Attribute>
 			<Attribute uuid="2040ca02-348b-4e57-b026-79a759bf3e91">
 				<Properties>
-					<Name>Предыдущий</Name>
+					<Name>Альтернативный</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий</v8:content>
+							<v8:content>Альтернативный</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -293,11 +293,11 @@
 			</Attribute>
 			<Attribute uuid="6201213e-4320-4f83-975f-776dffca8d13">
 				<Properties>
-					<Name>Предыдущий1</Name>
+					<Name>Альтернативный1</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий 1</v8:content>
+							<v8:content>Перечень 1</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -333,11 +333,11 @@
 			</Attribute>
 			<Attribute uuid="1bb98d7d-a4ed-48cf-a6d4-dcb7774ce2dd">
 				<Properties>
-					<Name>Предыдущий2</Name>
+					<Name>Альтернативный2</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий 2</v8:content>
+							<v8:content>Перечень 2</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -373,11 +373,11 @@
 			</Attribute>
 			<Attribute uuid="2112c5d0-0f92-4289-8bdf-792fffaaa144">
 				<Properties>
-					<Name>Предыдущий3</Name>
+					<Name>Альтернативный3</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предыдущий 3</v8:content>
+							<v8:content>Перечень 3</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -457,7 +457,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий 1</v8:content>
+							<v8:content>Перечень 1</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -497,7 +497,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий 2</v8:content>
+							<v8:content>Перечень 2</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -537,7 +537,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Следующий 3</v8:content>
+							<v8:content>Перечень 3</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1030,6 +1030,7 @@
 			<Form>ФормаГруппы</Form>
 			<Form>УдалитьФормаЭлемента</Form>
 			<Form>УдалитьФормаСписка</Form>
+			<Form>ФормаНастройкаСвойствКнопки</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

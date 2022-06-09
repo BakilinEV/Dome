@@ -578,6 +578,14 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
+				<InputField name="ТоварыСтатус" id="282">
+					<DataPath>Объект.Товары.Статус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<ContextMenu name="ТоварыСтатусКонтекстноеМеню" id="283"/>
+					<ExtendedTooltip name="ТоварыСтатусРасширеннаяПодсказка" id="284"/>
+				</InputField>
 				<InputField name="ТоварыИдентификаторСтроки" id="279">
 					<DataPath>Объект.Товары.ИдентификаторСтроки</DataPath>
 					<Visible>false</Visible>
@@ -738,6 +746,17 @@
 								<v8:FractionDigits>0</v8:FractionDigits>
 								<v8:AllowedSign>Any</v8:AllowedSign>
 							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Статус" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.СтатусыЗаявки</v8:Type>
 						</Type>
 					</Column>
 				</AdditionalColumns>

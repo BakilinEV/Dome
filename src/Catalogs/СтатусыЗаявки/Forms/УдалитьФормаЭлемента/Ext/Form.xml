@@ -43,7 +43,7 @@
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 				</InputField>
 				<CheckBoxField name="Согласование" id="136">
-					<DataPath>Объект.Согласование</DataPath>
+					<DataPath>Объект.Ожидающий</DataPath>
 					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="СогласованиеКонтекстноеМеню" id="137"/>
 					<ExtendedTooltip name="СогласованиеРасширеннаяПодсказка" id="138"/>
