@@ -75,6 +75,7 @@
 			<ChildItems>
 				<LabelField name="Код" id="19">
 					<DataPath>Список.Code</DataPath>
+					<Width>4</Width>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -126,27 +127,115 @@
 							<Group>Horizontal</Group>
 							<ExtendedTooltip name="ГруппаСледующийПереченьРасширеннаяПодсказка" id="46"/>
 							<ChildItems>
-								<LabelField name="Следующий1" id="34">
-									<DataPath>Список.Следующий1</DataPath>
+								<ColumnGroup name="ГруппаСледующийПеречень1" id="66">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Перечень 1</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="Следующий1КонтекстноеМеню" id="35"/>
-									<ExtendedTooltip name="Следующий1РасширеннаяПодсказка" id="36"/>
-								</LabelField>
-								<LabelField name="Следующий2" id="37">
-									<DataPath>Список.Следующий2</DataPath>
-									<ContextMenu name="Следующий2КонтекстноеМеню" id="38"/>
-									<ExtendedTooltip name="Следующий2РасширеннаяПодсказка" id="39"/>
-								</LabelField>
-								<LabelField name="Следующий3" id="40">
-									<DataPath>Список.Следующий3</DataPath>
-									<ContextMenu name="Следующий3КонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="Следующий3РасширеннаяПодсказка" id="42"/>
-								</LabelField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий по переченю 1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаСледующийПеречень1РасширеннаяПодсказка" id="67"/>
+									<ChildItems>
+										<LabelField name="Следующий1" id="34">
+											<DataPath>Список.Следующий1</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Следующий1КонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="Следующий1РасширеннаяПодсказка" id="36"/>
+										</LabelField>
+										<LabelField name="Следующий1Код" id="60">
+											<DataPath>Список.Следующий1.Code</DataPath>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Следующий1КодКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="Следующий1КодРасширеннаяПодсказка" id="62"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаСледующийПеречень2" id="68">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий по переченю 2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаСледующийПеречень2РасширеннаяПодсказка" id="69"/>
+									<ChildItems>
+										<LabelField name="Следующий2" id="37">
+											<DataPath>Список.Следующий2</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Следующий2КонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="Следующий2РасширеннаяПодсказка" id="39"/>
+										</LabelField>
+										<LabelField name="Следующий2Код" id="63">
+											<DataPath>Список.Следующий2.Code</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Следующий2КодКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="Следующий2КодРасширеннаяПодсказка" id="65"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаСледующийПеречень3" id="70">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий по переченю 3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаСледующийПеречень3РасширеннаяПодсказка" id="71"/>
+									<ChildItems>
+										<LabelField name="Следующий3" id="40">
+											<DataPath>Список.Следующий3</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Следующий3КонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="Следующий3РасширеннаяПодсказка" id="42"/>
+										</LabelField>
+										<LabelField name="Следующий3Код" id="72">
+											<DataPath>Список.Следующий3.Code</DataPath>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Следующий3КодКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="Следующий3КодРасширеннаяПодсказка" id="74"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</ColumnGroup>
 					</ChildItems>
@@ -166,10 +255,10 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаАльтернативныйРасширеннаяПодсказка" id="48"/>
 					<ChildItems>
-						<LabelField name="Предыдущий" id="28">
-							<DataPath>~Список.Предыдущий</DataPath>
-							<ContextMenu name="ПредыдущийКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="ПредыдущийРасширеннаяПодсказка" id="30"/>
+						<LabelField name="Альтернативный" id="28">
+							<DataPath>Список.Альтернативный</DataPath>
+							<ContextMenu name="АльтернативныйКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="АльтернативныйРасширеннаяПодсказка" id="30"/>
 						</LabelField>
 						<ColumnGroup name="ГруппаАльтернативныйПеречень" id="49">
 							<Title>
@@ -187,21 +276,113 @@
 							<Group>Horizontal</Group>
 							<ExtendedTooltip name="ГруппаАльтернативныйПереченьРасширеннаяПодсказка" id="50"/>
 							<ChildItems>
-								<LabelField name="Предыдущий1" id="51">
-									<DataPath>~Список.Предыдущий1</DataPath>
-									<ContextMenu name="Предыдущий1КонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="Предыдущий1РасширеннаяПодсказка" id="53"/>
-								</LabelField>
-								<LabelField name="Предыдущий2" id="54">
-									<DataPath>~Список.Предыдущий2</DataPath>
-									<ContextMenu name="Предыдущий2КонтекстноеМеню" id="55"/>
-									<ExtendedTooltip name="Предыдущий2РасширеннаяПодсказка" id="56"/>
-								</LabelField>
-								<LabelField name="Предыдущий3" id="57">
-									<DataPath>~Список.Предыдущий3</DataPath>
-									<ContextMenu name="Предыдущий3КонтекстноеМеню" id="58"/>
-									<ExtendedTooltip name="Предыдущий3РасширеннаяПодсказка" id="59"/>
-								</LabelField>
+								<ColumnGroup name="ГруппаАльтернативныйПеречень1" id="75">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий альтернативный по переченю 1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаАльтернативныйПеречень1РасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<LabelField name="Альтернативный1" id="51">
+											<DataPath>Список.Альтернативный1</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Альтернативный1КонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="Альтернативный1РасширеннаяПодсказка" id="53"/>
+										</LabelField>
+										<LabelField name="Альтернативный1Код" id="87">
+											<DataPath>Список.Альтернативный1.Code</DataPath>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Альтернативный1КодКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="Альтернативный1КодРасширеннаяПодсказка" id="89"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаАльтернативныйПеречень2" id="77">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий альтернативный по переченю 2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ГруппаАльтернативныйПеречень2РасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<LabelField name="Альтернативный2" id="54">
+											<DataPath>Список.Альтернативный2</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Альтернативный2КонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="Альтернативный2РасширеннаяПодсказка" id="56"/>
+										</LabelField>
+										<LabelField name="Альтернативный2Код" id="84">
+											<DataPath>Список.Альтернативный2.Code</DataPath>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Альтернативный2КодКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="Альтернативный2КодРасширеннаяПодсказка" id="86"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаАльтернативныйПеречень3" id="79">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перечень 3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующий альтернативный по переченю 3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаАльтернативныйПеречень3РасширеннаяПодсказка" id="80"/>
+									<ChildItems>
+										<LabelField name="Альтернативный3" id="57">
+											<DataPath>Список.Альтернативный3</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="Альтернативный3КонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="Альтернативный3РасширеннаяПодсказка" id="59"/>
+										</LabelField>
+										<LabelField name="Альтернативный3Код" id="81">
+											<DataPath>Список.Альтернативный3.Code</DataPath>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="Альтернативный3КодКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="Альтернативный3КодРасширеннаяПодсказка" id="83"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</ColumnGroup>
 					</ChildItems>

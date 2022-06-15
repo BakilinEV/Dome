@@ -56,6 +56,10 @@
 					<Type>UsualButton</Type>
 					<Height>1</Height>
 					<CommandName>Form.Command.КомандаОбразец</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.СостоянияЗаявок</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<ExtendedTooltip name="КнопкаОбразецРасширеннаяПодсказка" id="44"/>
 				</Button>
 			</ChildItems>

@@ -86,6 +86,7 @@
 			<Constant>ИспользоватьСтатусСрочности</Constant>
 			<Constant>КонтрагентЮралс</Constant>
 			<Constant>ЗагружатьРекомендованныхПоставщиков</Constant>
+			<Constant>АдресСервисаЮралс</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>Номенклатура</Catalog>

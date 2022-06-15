@@ -616,6 +616,7 @@
 								</ColumnGroup>
 								<LabelField name="ИнформацияЗаявокСтатус" id="147">
 									<DataPath>ИнформацияЗаявок.Статус</DataPath>
+									<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
 									<ContextMenu name="ИнформацияЗаявокСтатусКонтекстноеМеню" id="148"/>
 									<ExtendedTooltip name="ИнформацияЗаявокСтатусРасширеннаяПодсказка" id="149"/>
 								</LabelField>

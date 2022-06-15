@@ -185,6 +185,7 @@
 								<Button name="КнопкаСледующий" id="229">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
 									<CommandName>Form.Command.КомандаНастройкаКнопки</CommandName>
 									<TextColor>web:Green</TextColor>
 									<BackColor>#DCFFDC</BackColor>
@@ -198,6 +199,7 @@
 								<Button name="КнопкаОтмены" id="245">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
 									<CommandName>Form.Command.КомандаНастройкаКнопки</CommandName>
 									<TextColor>web:Crimson</TextColor>
 									<BackColor>web:MistyRose</BackColor>
@@ -291,6 +293,7 @@
 								<Button name="КнопкаАльтернативный" id="231">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
 									<CommandName>Form.Command.КомандаНастройкаКнопки</CommandName>
 									<TextColor>#003366</TextColor>
 									<BackColor>#CCFFFF</BackColor>

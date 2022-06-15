@@ -341,6 +341,7 @@
 				<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="Selection">ТоварыВыбор</Event>
 				<Event name="OnActivateField">ТоварыПриАктивизацииПоля</Event>
 				<Event name="OnStartEdit">ТоварыПриНачалеРедактирования</Event>
 			</Events>
@@ -452,6 +453,7 @@
 					</ToolTip>
 					<Group>Horizontal</Group>
 					<ShowTitle>false</ShowTitle>
+					<HeaderDataPath>ОсновнойСклад</HeaderDataPath>
 					<ExtendedTooltip name="ТоварыГруппаОстатокРасширеннаяПодсказка" id="268"/>
 					<ChildItems>
 						<InputField name="ТоварыОстаток" id="264">
@@ -459,6 +461,7 @@
 							<ReadOnly>true</ReadOnly>
 							<SkipOnInput>true</SkipOnInput>
 							<EditMode>EnterOnInput</EditMode>
+							<MultiLine>true</MultiLine>
 							<OpenButton>true</OpenButton>
 							<ContextMenu name="ТоварыОстатокКонтекстноеМеню" id="265"/>
 							<ExtendedTooltip name="ТоварыОстатокРасширеннаяПодсказка" id="266"/>
@@ -583,6 +586,7 @@
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<CellHyperlink>true</CellHyperlink>
+					<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
 					<ContextMenu name="ТоварыСтатусКонтекстноеМеню" id="283"/>
 					<ExtendedTooltip name="ТоварыСтатусРасширеннаяПодсказка" id="284"/>
 				</InputField>

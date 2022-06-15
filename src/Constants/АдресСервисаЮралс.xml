@@ -1,31 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<Constant uuid="6dcbef03-3db5-4ea7-9a1d-732af4e971a7">
+	<Constant uuid="5496b170-82c4-442a-b70b-6327645920d7">
 		<InternalInfo>
-			<xr:GeneratedType name="ConstantManager.КонтрагентЮралс" category="Manager">
-				<xr:TypeId>4b34a176-cf11-43d3-a43a-009e7a67a758</xr:TypeId>
-				<xr:ValueId>7ea31e68-2b6c-43ea-9409-13ba803b0d77</xr:ValueId>
+			<xr:GeneratedType name="ConstantManager.АдресСервисаЮралс" category="Manager">
+				<xr:TypeId>0929676d-a3e1-4e19-9218-c4c795102a72</xr:TypeId>
+				<xr:ValueId>9b7b7b6f-3035-434e-b5e5-f4e9ef26b714</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueManager.КонтрагентЮралс" category="ValueManager">
-				<xr:TypeId>27a08faf-fdb4-4cca-97af-6e306c0c7346</xr:TypeId>
-				<xr:ValueId>c89bf432-af41-4b98-be2c-f0fed086e208</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueManager.АдресСервисаЮралс" category="ValueManager">
+				<xr:TypeId>9af4cd31-6e53-4255-b2f4-806447e0802c</xr:TypeId>
+				<xr:ValueId>bf1ce3fb-6ade-497a-a128-46663cb50422</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueKey.КонтрагентЮралс" category="ValueKey">
-				<xr:TypeId>adaddc61-df6a-46f9-8fd4-64651abd5c20</xr:TypeId>
-				<xr:ValueId>359d62d4-d6db-4f6c-a0fc-b6877808d57f</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueKey.АдресСервисаЮралс" category="ValueKey">
+				<xr:TypeId>e0098b06-8cf9-48b8-9b4a-2c1f23915ca9</xr:TypeId>
+				<xr:ValueId>1a79641c-93db-4098-86e6-4a8c1eee34bb</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КонтрагентЮралс</Name>
+			<Name>АдресСервисаЮралс</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Контрагент Юралс</v8:content>
+					<v8:content>Адрес сервиса Юралс</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>

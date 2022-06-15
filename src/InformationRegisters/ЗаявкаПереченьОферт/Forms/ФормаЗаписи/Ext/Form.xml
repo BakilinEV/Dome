@@ -28,10 +28,11 @@
 					<ContextMenu name="НоменклатураКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="6"/>
 				</InputField>
-				<InputField name="ЦенаБезНДС" id="10">
-					<DataPath>Запись.ЦенаБезНДС</DataPath>
-					<ContextMenu name="ЦенаБезНДСКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ЦенаБезНДСРасширеннаяПодсказка" id="12"/>
+				<InputField name="НоменклатураКод" id="20">
+					<DataPath>Запись.Номенклатура.Code</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="НоменклатураКодКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="НоменклатураКодРасширеннаяПодсказка" id="22"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -74,6 +75,11 @@
 					</Title>
 					<ContextMenu name="КонтрагентИННКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="КонтрагентИННРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ЦенаБезНДС" id="10">
+					<DataPath>Запись.ЦенаБезНДС</DataPath>
+					<ContextMenu name="ЦенаБезНДСКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЦенаБезНДСРасширеннаяПодсказка" id="12"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
